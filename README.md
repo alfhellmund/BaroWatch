@@ -2,7 +2,7 @@
 
 Statische Webseite für die App **BaroWatch** (App Store): Datenschutzerklärung, Support-Kontakt, Impressum.
 
-Gehostet via **GitHub Pages**: <https://alfhellmund.github.io/barowatch-website/>
+Gehostet via **GitHub Pages**: <https://alfhellmund.github.io/BaroWatch/>
 
 ## Seiten
 
@@ -14,7 +14,7 @@ Gehostet via **GitHub Pages**: <https://alfhellmund.github.io/barowatch-website/
 ## Lokal testen
 
 ```sh
-cd barowatch-website
+cd BaroWatch
 python3 -m http.server 8000
 open http://localhost:8000
 ```
