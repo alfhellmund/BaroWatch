@@ -128,3 +128,20 @@ hr.section {
   border-top: 1px solid var(--border);
   margin: 64px 0;
 }
+
+/* Entwurfsmarker: offene Prüfpunkte für den Projektinhaber.
+   Vor der Veröffentlichung müssen alle .pruefen-Elemente entfernt sein. */
+.pruefen {
+  background: #fff4c2;
+  color: #5c4400;
+  font-size: 14px;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pruefen {
+    background: #3d3200;
+    color: #ffe89a;
+  }
+}

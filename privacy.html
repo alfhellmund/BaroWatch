@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1>Datenschutzerklärung</h1>
-    <p>BaroWatch — Stand: Mai 2026</p>
+    <p>BaroWatch — Fassung 2.0, Stand: 26. Oktober 2026</p>
   </header>
 
   <div class="lang-switch">
@@ -18,9 +18,12 @@
     <a href="#en">English</a>
   </div>
 
+  <!-- ===================================================== DEUTSCH -->
   <section id="de">
+    <p><em>Diese Datenschutzerklärung liegt auf Deutsch und Englisch vor. Bei Abweichungen gilt die deutsche Fassung.</em></p>
+
     <h2>1. Verantwortlicher</h2>
-    <p>Verantwortlicher im Sinne von Art. 4 Nr. 7 DSGVO:</p>
+    <p>Verantwortlicher im Sinne von Art. 4 Nr. 7 DSGVO für die App BaroWatch und diese Website:</p>
     <p>
       Alf Hellmund<br>
       Ehrensteinstr. 17<br>
@@ -28,116 +31,287 @@
       Deutschland<br>
       E-Mail: <a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a>
     </p>
+    <p>Für alle Fragen zum Datenschutz und zur Ausübung Ihrer Rechte genügt eine E-Mail an diese Adresse. Ein Datenschutzbeauftragter ist nicht benannt; eine Pflicht dazu besteht nicht (Art. 37 DSGVO, § 38 BDSG).</p>
 
-    <h2>2. Grundsatz</h2>
-    <p>BaroWatch ist eine native App für iPhone, iPad und Apple Watch zur Anzeige des Luftdrucks. Die App verarbeitet alle Daten ausschließlich lokal auf Ihrem Gerät. Es findet <strong>keine</strong> Datenübertragung an unsere Server oder an Dritte statt. Es gibt keine Server. Es findet kein Tracking, kein Profiling, keine Werbung statt. Es werden keine Drittanbieter-SDKs für Analytics oder Werbung verwendet.</p>
-
-    <h2>3. Verarbeitete Daten</h2>
-
-    <h3>3.1 Sensordaten (Barometer)</h3>
-    <p>Die App liest Luftdruckwerte vom Barometer-Sensor des Geräts. Die Werte werden lokal in einem geräteinternen Speicher abgelegt (Apple App Group Container). Sie verlassen das Gerät nicht.</p>
-
-    <h3>3.2 Standortdaten (GPS-Höhe)</h3>
-    <p>Die App nutzt den Standort, um die GPS-Höhe zu bestimmen. Die Höhe wird benötigt, um den gemessenen Stationsdruck (QFE) auf Meereshöhe (QNH) umzurechnen — eine Standardkonvention in Meteorologie und Luftfahrt.</p>
-    <p>Standortdaten werden ausschließlich auf dem Gerät verarbeitet. Es wird <strong>weder die exakte Position gespeichert noch übertragen</strong>. Lediglich die jeweils zuletzt bekannte Höhe wird flüchtig im Arbeitsspeicher gehalten, um die QNH-Berechnung zu ermöglichen.</p>
-    <p>Sie können die Standortnutzung jederzeit in den iOS-Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Ortungsdienste</em> deaktivieren. In diesem Fall zeigt die App nur den unkorrigierten Stationsdruck (QFE).</p>
-
-    <h3>3.3 Synchronisation zwischen Ihren Geräten</h3>
-    <p>Die App ermöglicht den Datenaustausch zwischen Ihrem iPhone, iPad und Ihrer Apple Watch:</p>
+    <h2>2. Kurzfassung</h2>
+    <p>BaroWatch ist eine App für iPhone, iPad und Apple Watch, die den Luftdruck misst und anzeigt. Alle Berechnungen laufen auf Ihren Geräten.</p>
     <ul>
-      <li><strong>WatchConnectivity</strong> (Apple-Framework) zwischen iPhone und gepaarter Apple Watch — verschlüsselte Kommunikation auf Apple-Plattform-Ebene</li>
-      <li><strong>MultipeerConnectivity</strong> (Apple-Framework) zwischen iPhone und iPad über lokales WLAN/Bluetooth — verschlüsselte Peer-to-Peer-Verbindung mit Pairing über einen 6-stelligen Code</li>
+      <li>BaroWatch überträgt keine Daten an uns oder an Dritte. Es gibt keinen Server, kein Konto und keinen Abgleich über iCloud.</li>
+      <li>Es gibt kein Tracking, keine Werbung, kein Profiling und keine Analyse- oder Werbe-SDKs Dritter.</li>
+      <li>Daten werden nur zwischen Ihren eigenen Geräten abgeglichen (Abschnitt 3.5). Sonst verlassen sie das Gerät nur, wenn Sie sie selbst weitergeben: als Datenexport, als Diagnosedaten oder als Support-Mail.</li>
     </ul>
-    <p>Es ist <strong>kein Server</strong> beteiligt. Die Daten werden direkt zwischen Ihren eigenen Geräten ausgetauscht.</p>
 
-    <h3>3.4 Lokale Benachrichtigungen</h3>
-    <p>Die App kann lokale Benachrichtigungen erzeugen, wenn der Luftdruck schnell ändert (über einen vom Nutzer konfigurierten Schwellenwert hinaus). Diese Benachrichtigungen werden ausschließlich auf dem Gerät erzeugt — es findet keine Server-Push-Kommunikation statt.</p>
+    <h2>3. Daten in der App</h2>
+    <p>Die folgenden Daten verarbeitet BaroWatch ausschließlich auf Ihren Geräten. Wir als Anbieter erhalten davon nichts, solange Sie uns nichts schicken.</p>
+
+    <h3>3.1 Luftdruck (Barometer)</h3>
+    <p>BaroWatch liest den Luftdruck aus dem Barometer des Geräts. Dafür fragt das System nach der Freigabe „Bewegung &amp; Fitness“. Jeder Messwert wird mit Zeitpunkt, Quelle und — soweit bekannt — der Höhe über dem Meeresspiegel gespeichert, im gemeinsamen Speicher der App und ihrer Widgets auf dem Gerät (App-Gruppen-Container). Wie lange, stellen Sie in den Einstellungen unter <em>Speichern</em> ein (ab Werk 24 Stunden, wählbar von 1 Stunde bis 365 Tage); ältere Werte löscht die App selbst.</p>
+
+    <h3>3.2 Standort (GPS-Höhe)</h3>
+    <p>BaroWatch nutzt die Ortungsdienste, um die Höhe über dem Meeresspiegel zu bestimmen. Sie wird gebraucht, um den gemessenen Stationsdruck (QFE) auf Meereshöhe (QNH) umzurechnen.</p>
+    <ul>
+      <li><strong>iPhone und iPad:</strong> Die App bittet um die Freigabe „Immer“. Damit kann sie auch im Hintergrund messen: Ortungsereignisse dienen als Auslöser für regelmäßige Druckmessungen, und bei einem deutlichen Ortswechsel startet das System die App neu. Während die App den Standort im Hintergrund nutzt, zeigt das System das übliche Ortungssymbol an.</li>
+      <li><strong>Apple Watch:</strong> Die App nutzt den Standort nur „Beim Verwenden der App“.</li>
+    </ul>
+    <p><strong>Gespeichert wird nur die Höhe, nie die Position.</strong> Breiten- und Längengrad werden weder gespeichert noch übertragen. Gespeichert werden die zuletzt bestimmte Höhe mit Zeitpunkt, Genauigkeit und dem dazu gemessenen Druck sowie die Höhe an jedem Messwert (3.1).</p>
+    <p>Sie können die Freigabe jederzeit in den Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Ortungsdienste → BaroWatch</em> ändern oder widerrufen. Ohne Freigabe zeigt die App den unkorrigierten Stationsdruck (QFE).</p>
+
+    <h3>3.3 Bewegungsaktivität und Schritte</h3>
+    <p>Mit der Freigabe „Bewegung &amp; Fitness“ fragt BaroWatch beim System die Bewegungsaktivität (z. B. in Ruhe, gehend, fahrend), die Schritte und — soweit das Gerät sie zählt — die Stockwerke der letzten Stunde ab. <strong>Zweck:</strong> festzustellen, ob sich das Gerät seit der letzten Höhenbestimmung bewegt hat; nur dann wird die Höhe neu bestimmt. Diese Werte werden nur für diese Entscheidung verwendet und nicht gespeichert; im Diagnoseprotokoll (3.6) kann das Ergebnis stehen (z. B. „in Ruhe“ oder „bewegt“).</p>
+
+    <h3>3.4 Benachrichtigungen</h3>
+    <p>Auf Wunsch erzeugt die App lokale Benachrichtigungen, wenn sich der Luftdruck schneller ändert als der von Ihnen eingestellte Schwellenwert. Die Benachrichtigungen entstehen auf dem Gerät; es gibt keine Push-Mitteilungen über einen Server.</p>
+
+    <h3>3.5 Abgleich zwischen Ihren Geräten</h3>
+    <ul>
+      <li><strong>iPhone und Apple Watch</strong> gleichen über WatchConnectivity (Apple-Framework) Messwerte mit Höhe, Einstellungen und Diagnosedaten der Watch ab.</li>
+      <li><strong>iPhone und iPad</strong> gleichen über MultipeerConnectivity (Apple-Framework) im lokalen Netzwerk bzw. über Bluetooth Messwerte und Einstellungen ab. Die Verbindung ist verschlüsselt und setzt einen sechsstelligen Kopplungscode voraus. Dafür fragt das System nach der Freigabe „Lokales Netzwerk“. Die Geräte sehen dabei die Gerätebezeichnung, die iOS der App mitteilt (ohne besondere Berechtigung nur die allgemeine Bezeichnung wie „iPhone“ oder „iPad“).</li>
+    </ul>
+    <p>Kein Server ist beteiligt; die Daten gehen direkt zwischen Ihren eigenen Geräten.</p>
+
+    <h3>3.6 Einstellungen und Diagnoseprotokoll</h3>
+    <p>Einstellungen (z. B. Messintervall, Speicherdauer, Höhenmodus, eine von Hand eingegebene Höhe, Alarmschwelle) speichert die App auf dem Gerät. Ein technisches Diagnoseprotokoll hält fest, was die Hintergrundprozesse entschieden haben (Sensor, Höhenbestimmung, Abgleich, Hintergrundaktualisierung, Alarm) — ohne Koordinaten. Es ist auf 512 KB begrenzt; ältere Einträge fallen heraus.</p>
+
+    <h3>3.7 Datenexport und Diagnosedaten (nur auf Ihre Veranlassung)</h3>
+    <ul>
+      <li><strong>Datenexport (JSON)</strong> in den Einstellungen erzeugt eine Datei mit den gespeicherten Messwerten (Druck, Zeit, Quelle, Höhe).</li>
+      <li><strong>Diagnosedaten senden</strong> erzeugt eine Datei mit Gerätemodell-Kennung, Betriebssystemversion, App-Version, Stand der Freigaben, Einstellungen, Sensor- und Höhenzustand, Speicher- und Abgleichstatus, dem Diagnoseprotokoll von iPhone und Watch und den letzten Messwerten. <strong>Nie enthalten:</strong> Koordinaten und der Kopplungscode.</li>
+    </ul>
+    <p>Beide Dateien öffnen das Teilen-Fenster des Systems; dort wählen Sie selbst Empfänger und Weg. Es gibt keinen automatischen Versand.</p>
+
+    <h3>3.8 Support-Mail</h3>
+    <p>Schreiben Sie uns — aus der Hilfe der App oder direkt —, verarbeiten wir Ihre E-Mail-Adresse, Ihren Namen, soweit angegeben, den Inhalt und ggf. beigefügte Diagnosedaten, um Ihre Anfrage zu beantworten. Das Postfach wird beim E-Mail-Dienst GMX geführt, einem Dienst der 1&amp;1 Mail &amp; Media GmbH, Montabaur, Deutschland.</p>
+
 
     <h2>4. Apple-Plattformdienste</h2>
-    <p>Die App wird über den Apple App Store vertrieben. Apple erhebt im Rahmen der Distribution eigene Daten (z. B. Download-Statistiken, Crash-Reports), auf die wir keinen Einfluss haben. Es gelten die Datenschutzbestimmungen von Apple Inc.: <a href="https://www.apple.com/legal/privacy/de/">https://www.apple.com/legal/privacy/de/</a>.</p>
+    <p>Die folgenden Verarbeitungen führt Apple als eigener Verantwortlicher durch; wir haben darauf keinen Einfluss. Es gelten die Datenschutzbestimmungen von Apple: <a href="https://www.apple.com/de/legal/privacy/">apple.com/de/legal/privacy</a>.</p>
+    <ul>
+      <li><strong>App Store:</strong> Kauf, Download und Updates wickelt Apple ab. Wir erhalten von Apple nur zusammengefasste Statistiken ohne Personenbezug.</li>
+      <li><strong>Absturz- und Leistungsdaten:</strong> Haben Sie in den Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen</em> „Mit App-Entwicklern teilen“ eingeschaltet, stellt Apple uns Absturzberichte und zusammengefasste Leistungsdaten zur Verfügung. Ohne diese Einwilligung erhalten wir nichts.</li>
+      <li><strong>Gerätesicherung:</strong> Ist eine iCloud-Sicherung oder eine Sicherung auf einem Computer eingeschaltet, sind die Daten der App — wie die anderer Apps — Teil dieser Gerätesicherung. Diese richtet das Betriebssystem nach Ihrer Einstellung ein, nicht BaroWatch.</li>
+    </ul>
 
-    <h2>5. Rechtsgrundlage</h2>
-    <p>Da BaroWatch keine personenbezogenen Daten erhebt, speichert oder überträgt, fällt die Datenverarbeitung im engeren Sinne nicht unter die DSGVO. Soweit im Einzelfall doch personenbezogene Daten verarbeitet werden sollten (z. B. durch Apple-Plattformdienste), erfolgt dies auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen App).</p>
+    <h2 id="de-website">5. Diese Website</h2>
+    <p>Diese Website wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf einer Seite verarbeitet GitHub technisch notwendige Verbindungsdaten, darunter Ihre IP-Adresse; nach Angaben von GitHub wird die IP-Adresse jedes Besuchers aus Sicherheitsgründen protokolliert und gespeichert, auch ohne Anmeldung bei GitHub. GitHub verarbeitet diese Daten nach seiner Datenschutzerklärung als eigener Verantwortlicher und nennt für diese Protokolle keine feste Speicherdauer; darauf haben wir keinen Einfluss.</p>
+    <p>Die Website setzt keine Cookies, enthält kein Tracking und lädt keine Schriften, Skripte oder sonstigen Inhalte von Dritten nach.</p>
+    <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse ist eine sichere, kostenfreie und zuverlässige Bereitstellung der Pflichtangaben zur App. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss der EU-Kommission, Art. 45 DSGVO). Datenschutzerklärung von GitHub: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>.</p>
 
-    <h2>6. Ihre Rechte</h2>
-    <p>Sie haben das Recht auf:</p>
+    <h2>6. Rechtsgrundlagen</h2>
+    <ul>
+      <li><strong>Verarbeitung auf Ihren Geräten und Abgleich zwischen ihnen</strong> (3.1–3.7): Die Daten erreichen uns nicht. Die App speichert sie auf dem Gerät und greift auf sie zu, weil das für die von Ihnen ausdrücklich genutzten Funktionen unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG; Art. 6 Abs. 1 lit. b DSGVO). Sensor, Standort, Bewegungsdaten, lokales Netzwerk und Benachrichtigungen nutzt die App nur mit Ihrer Freigabe im System.</li>
+      <li><strong>Diagnosedaten und Support-Mail</strong> (3.7, 3.8): Art. 6 Abs. 1 lit. b DSGVO (Bearbeitung Ihrer Anfrage zur App) bzw. lit. f (berechtigtes Interesse, Anfragen zu beantworten und Fehler zu beheben).</li>
+      <li><strong>Absturz- und Leistungsdaten über Apple</strong> (4): Ihre Einwilligung gegenüber Apple, Art. 6 Abs. 1 lit. a DSGVO.</li>
+      <li><strong>Website</strong> (5): Art. 6 Abs. 1 lit. f DSGVO.</li>
+    </ul>
+
+    <h2>7. Empfänger und Übermittlung in Drittländer</h2>
+    <p>Wir geben keine Daten an Dritte weiter und verkaufen keine Daten. Empfänger sind nur:</p>
+    <ul>
+      <li>Ihre eigenen gekoppelten Geräte (3.5);</li>
+      <li>die Empfänger, die Sie selbst beim Teilen eines Datenexports oder der Diagnosedaten wählen;</li>
+      <li>unser E-Mail-Dienst GMX (1&amp;1 Mail &amp; Media GmbH, Deutschland) für Support-Mails;</li>
+      <li>GitHub, Inc. (USA) beim Aufruf dieser Website (Abschnitt 5);</li>
+      <li>Apple als eigener Verantwortlicher für die in Abschnitt 4 genannten Dienste.</li>
+    </ul>
+    <p>Eine Übermittlung in ein Drittland findet nur beim Aufruf dieser Website (GitHub, USA, EU-US Data Privacy Framework) und im Rahmen der Apple-Dienste statt.</p>
+
+    <h2>8. Speicherdauer und Löschung</h2>
+    <ul>
+      <li><strong>Messwerte:</strong> so lange, wie unter <em>Speichern</em> eingestellt (ab Werk 24 Stunden, höchstens 365 Tage); <em>Daten löschen</em> in den Einstellungen entfernt sie sofort.</li>
+      <li><strong>Höhe:</strong> die jeweils zuletzt bestimmte Höhe, bis sie durch eine neue ersetzt wird.</li>
+      <li><strong>Bewegungsaktivität und Schritte:</strong> nicht gespeichert.</li>
+      <li><strong>Diagnoseprotokoll:</strong> rollierend, höchstens 512 KB.</li>
+      <li><strong>Einstellungen:</strong> bis Sie sie ändern oder die App löschen. Mit dem Löschen der App entfernt das System alle Daten der App vom Gerät.</li>
+      <li><strong>Export- und Diagnosedateien zum Teilen:</strong> im temporären Verzeichnis der App, das das System selbst bereinigt; was Sie weitergegeben haben, liegt beim gewählten Empfänger.</li>
+      <li><strong>Support-Mails und Diagnosedaten bei uns:</strong> bis die Anfrage abgeschlossen ist, danach werden sie spätestens nach 12 Monaten gelöscht.</li>
+      <li><strong>Website-Protokolle:</strong> nach den Vorgaben von GitHub (Abschnitt 5).</li>
+    </ul>
+
+    <h2>9. Pflicht zur Bereitstellung</h2>
+    <p>Sie sind weder gesetzlich noch vertraglich verpflichtet, Daten bereitzustellen. Ohne Freigabe „Bewegung &amp; Fitness“ kann die App keinen Luftdruck messen; ohne Ortungsfreigabe zeigt sie nur den unkorrigierten Stationsdruck (QFE); ohne Freigabe „Lokales Netzwerk“ gibt es keinen Abgleich zwischen iPhone und iPad; ohne Mitteilungsfreigabe keinen Druckalarm.</p>
+
+    <h2>10. Keine automatisierte Entscheidungsfindung</h2>
+    <p>Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO statt.</p>
+
+    <h2>11. Ihre Rechte</h2>
+    <p>Soweit wir personenbezogene Daten von Ihnen verarbeiten (in der Regel nur bei Support-Anfragen), haben Sie das Recht auf:</p>
     <ul>
       <li>Auskunft (Art. 15 DSGVO)</li>
       <li>Berichtigung (Art. 16 DSGVO)</li>
       <li>Löschung (Art. 17 DSGVO)</li>
       <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
       <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
-      <li>Widerspruch (Art. 21 DSGVO)</li>
+      <li>Widerspruch gegen eine Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21 DSGVO)</li>
     </ul>
-    <p>Da wir keine Daten erheben oder speichern, können Sie alle in der App gespeicherten Daten durch Deinstallation der App vollständig entfernen.</p>
+    <p><strong>Widerruf einer Einwilligung</strong> (Art. 7 Abs. 3 DSGVO): Eine Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen — die Freigaben für Ortung, Bewegung &amp; Fitness, lokales Netzwerk und Mitteilungen in den Systemeinstellungen, die Weitergabe von Analysedaten unter <em>Analyse &amp; Verbesserungen</em>. Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt.</p>
+    <p>Die Daten auf Ihren Geräten verwalten Sie selbst: Sie können sie in der App exportieren und löschen. Da sie uns nicht vorliegen, können wir darüber keine Auskunft geben und sie nicht für Sie löschen.</p>
+    <p>Für Anfragen genügt eine E-Mail an <a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a>.</p>
 
-    <h2>7. Beschwerderecht</h2>
-    <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Eine Liste der deutschen Aufsichtsbehörden finden Sie unter <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/anschriften_table.html">bfdi.bund.de</a>.</p>
+    <h2>12. Beschwerderecht</h2>
+    <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO), insbesondere in dem Mitgliedstaat Ihres Aufenthaltsorts. Für uns zuständig ist:</p>
+    <p>
+      Sächsische Datenschutz- und Transparenzbeauftragte<br>
+      Maternistraße 17, 01067 Dresden<br>
+      Postanschrift: Postfach 11 01 32, 01330 Dresden<br>
+      E-Mail: <a href="mailto:post@sdtb.sachsen.de">post@sdtb.sachsen.de</a><br>
+      <a href="https://www.datenschutz.sachsen.de/">www.datenschutz.sachsen.de</a>
+    </p>
 
-    <h2>8. Änderungen</h2>
-    <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App ändern oder rechtliche Anforderungen es erfordern. Die jeweils aktuelle Fassung ist über diese URL erreichbar.</p>
+    <h2>13. Kinder</h2>
+    <p>BaroWatch richtet sich nicht an Kinder und erhebt keine Altersangaben.</p>
+
+    <h2>14. Änderungen</h2>
+    <p>Wir passen diese Datenschutzerklärung an, wenn sich Funktionen der App oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung ist unter dieser Adresse erreichbar.</p>
+    <p>Fassung 2.0, Stand: 26. Oktober 2026 (ersetzt die Fassung vom Mai 2026).</p>
   </section>
 
   <hr class="section">
 
+  <!-- ===================================================== ENGLISH -->
   <section id="en">
+    <p><em>This privacy policy is available in German and English. In case of discrepancies, the German version prevails.</em></p>
+
     <h2>1. Controller</h2>
-    <p>Controller within the meaning of Art. 4 No. 7 GDPR:</p>
+    <p>Controller within the meaning of Art. 4 No. 7 GDPR for the BaroWatch app and this website:</p>
     <p>
       Alf Hellmund<br>
       Ehrensteinstr. 17<br>
       04105 Leipzig<br>
-      Deutschland<br>
+      Germany<br>
       Email: <a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a>
     </p>
+    <p>For any privacy question and to exercise your rights, an email to this address is sufficient. No data protection officer has been appointed; there is no obligation to do so (Art. 37 GDPR, Section 38 BDSG).</p>
 
-    <h2>2. Principle</h2>
-    <p>BaroWatch is a native app for iPhone, iPad and Apple Watch that displays barometric pressure. The app processes all data exclusively on your device. <strong>No data is transmitted</strong> to our servers or to third parties. We don't operate any servers. There is no tracking, no profiling, no advertising. No third-party SDKs for analytics or advertising are used.</p>
-
-    <h2>3. Processed data</h2>
-
-    <h3>3.1 Sensor data (barometer)</h3>
-    <p>The app reads pressure values from the device's barometer sensor. Values are stored locally in a device-internal store (Apple App Group container). They never leave the device.</p>
-
-    <h3>3.2 Location data (GPS altitude)</h3>
-    <p>The app uses location services to determine GPS altitude. Altitude is needed to convert the measured station pressure (QFE) to sea-level pressure (QNH) — a standard convention in meteorology and aviation.</p>
-    <p>Location data is processed entirely on-device. <strong>The exact position is neither stored nor transmitted</strong>. Only the most recent altitude is held volatile in memory to enable QNH calculation.</p>
-    <p>You can disable location use at any time in iOS Settings under <em>Privacy &amp; Security → Location Services</em>. In that case, the app shows the uncorrected station pressure (QFE) only.</p>
-
-    <h3>3.3 Synchronization between your devices</h3>
-    <p>The app supports data exchange between your iPhone, iPad and Apple Watch:</p>
+    <h2>2. Summary</h2>
+    <p>BaroWatch is an app for iPhone, iPad and Apple Watch that measures and displays air pressure. All calculations run on your devices.</p>
     <ul>
-      <li><strong>WatchConnectivity</strong> (Apple framework) between iPhone and paired Apple Watch — encrypted communication at the Apple platform layer</li>
-      <li><strong>MultipeerConnectivity</strong> (Apple framework) between iPhone and iPad over local Wi-Fi/Bluetooth — encrypted peer-to-peer connection with pairing via a 6-digit code</li>
+      <li>BaroWatch transmits no data to us or to third parties. There is no server, no account and no iCloud sync.</li>
+      <li>There is no tracking, no advertising, no profiling and no third-party analytics or advertising SDK.</li>
+      <li>Data is only synchronized between your own devices (section 3.5). Otherwise it leaves the device only when you pass it on yourself: as a data export, as diagnostics data or as a support email.</li>
     </ul>
-    <p>No server is involved. Data is exchanged directly between your own devices.</p>
 
-    <h3>3.4 Local notifications</h3>
-    <p>The app may generate local notifications when air pressure changes rapidly (above a user-configured threshold). These notifications are generated entirely on-device — no server-side push communication takes place.</p>
+    <h2>3. Data in the app</h2>
+    <p>BaroWatch processes the following data exclusively on your devices. We as provider receive none of it unless you send it to us.</p>
+
+    <h3>3.1 Air pressure (barometer)</h3>
+    <p>BaroWatch reads the air pressure from the device's barometer. The system asks for “Motion &amp; Fitness” access for this. Each reading is stored with time, source and — if known — the altitude above sea level, in the storage shared by the app and its widgets on the device (App Group container). You set how long under <em>Speichern</em> (Store) in Settings (24 hours by default, from 1 hour to 365 days); the app deletes older values itself.</p>
+
+    <h3>3.2 Location (GPS altitude)</h3>
+    <p>BaroWatch uses location services to determine the altitude above sea level. It is needed to convert the measured station pressure (QFE) to sea-level pressure (QNH).</p>
+    <ul>
+      <li><strong>iPhone and iPad:</strong> the app asks for “Always” access. This lets it measure in the background as well: location events trigger periodic pressure readings, and after a significant change of location the system relaunches the app. While the app uses location in the background, the system shows the usual location indicator.</li>
+      <li><strong>Apple Watch:</strong> the app uses location only “While Using the App”.</li>
+    </ul>
+    <p><strong>Only the altitude is stored, never the position.</strong> Latitude and longitude are neither stored nor transmitted. Stored are the most recently determined altitude with time, accuracy and the pressure measured with it, and the altitude at each reading (3.1).</p>
+    <p>You can change or revoke permission at any time in system settings under <em>Privacy &amp; Security → Location Services → BaroWatch</em>. Without permission, the app shows the uncorrected station pressure (QFE).</p>
+
+    <h3>3.3 Motion activity and steps</h3>
+    <p>With “Motion &amp; Fitness” access, BaroWatch queries the system for the motion activity (e.g. stationary, walking, driving), the steps and — where the device counts them — the floors of the last hour. <strong>Purpose:</strong> to determine whether the device has moved since the altitude was last determined; only then is the altitude determined again. These values are used only for this decision and are not stored; the diagnostics log (3.6) may contain the result (e.g. “stationary” or “moved”).</p>
+
+    <h3>3.4 Notifications</h3>
+    <p>If you wish, the app creates local notifications when air pressure changes faster than the threshold you set. The notifications are generated on the device; there are no push notifications via a server.</p>
+
+    <h3>3.5 Sync between your devices</h3>
+    <ul>
+      <li><strong>iPhone and Apple Watch</strong> exchange readings with altitude, settings and the Watch's diagnostics data via WatchConnectivity (Apple framework).</li>
+      <li><strong>iPhone and iPad</strong> exchange readings and settings via MultipeerConnectivity (Apple framework) over the local network or Bluetooth. The connection is encrypted and requires a six-digit pairing code. The system asks for “Local Network” access for this. The devices see the device name iOS provides to the app (without special entitlement only the generic name such as “iPhone” or “iPad”).</li>
+    </ul>
+    <p>No server is involved; data goes directly between your own devices.</p>
+
+    <h3>3.6 Settings and diagnostics log</h3>
+    <p>The app stores settings (e.g. sampling interval, retention, altitude mode, a manually entered altitude, alarm threshold) on the device. A technical diagnostics log records what the background processes decided (sensor, altitude determination, sync, background refresh, alarm) — without coordinates. It is limited to 512 KB; older entries drop out.</p>
+
+    <h3>3.7 Data export and diagnostics data (only at your request)</h3>
+    <ul>
+      <li><strong>Data export (JSON)</strong> in Settings creates a file with the stored readings (pressure, time, source, altitude).</li>
+      <li><strong>Send diagnostics data</strong> creates a file with device model identifier, operating system version, app version, permission states, settings, sensor and altitude state, storage and sync status, the diagnostics log of iPhone and Watch, and the latest readings. <strong>Never included:</strong> coordinates and the pairing code.</li>
+    </ul>
+    <p>Both open the system share sheet; there you choose recipient and channel yourself. There is no automatic sending.</p>
+
+    <h3>3.8 Support email</h3>
+    <p>If you write to us — from the app's help or directly — we process your email address, your name if given, the content and any attached diagnostics data to answer your request. The mailbox is hosted by the email service GMX, a service of 1&amp;1 Mail &amp; Media GmbH, Montabaur, Germany.</p>
+
 
     <h2>4. Apple platform services</h2>
-    <p>The app is distributed via the Apple App Store. Apple collects its own data as part of distribution (e.g., download statistics, crash reports) over which we have no influence. Apple Inc.'s privacy policy applies: <a href="https://www.apple.com/legal/privacy/en-ww/">https://www.apple.com/legal/privacy/en-ww/</a>.</p>
-
-    <h2>5. Legal basis</h2>
-    <p>Since BaroWatch does not collect, store, or transmit personal data, data processing in the narrower sense does not fall under the GDPR. Should personal data nevertheless be processed in individual cases (e.g., by Apple platform services), this is based on Art. 6 (1) (b) GDPR (performance of contract) and Art. 6 (1) (f) GDPR (legitimate interest in a functioning app).</p>
-
-    <h2>6. Your rights</h2>
-    <p>You have the right to:</p>
+    <p>Apple performs the following processing as an independent controller; we have no influence on it. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/en-ww/">apple.com/legal/privacy</a>.</p>
     <ul>
-      <li>Access (Art. 15 GDPR)</li>
-      <li>Rectification (Art. 16 GDPR)</li>
-      <li>Erasure (Art. 17 GDPR)</li>
-      <li>Restriction of processing (Art. 18 GDPR)</li>
-      <li>Data portability (Art. 20 GDPR)</li>
-      <li>Object (Art. 21 GDPR)</li>
+      <li><strong>App Store:</strong> Apple handles purchase, download and updates. We receive only aggregated statistics from Apple without personal reference.</li>
+      <li><strong>Crash and performance data:</strong> if you have switched on “Share With App Developers” in system settings under <em>Privacy &amp; Security → Analytics &amp; Improvements</em>, Apple provides us with crash reports and aggregated performance data. Without this consent we receive nothing.</li>
+      <li><strong>Device backup:</strong> if an iCloud backup or a backup to a computer is enabled, the app's data — like that of other apps — is part of this device backup. The operating system sets it up according to your setting, not BaroWatch.</li>
     </ul>
-    <p>Since we collect or store no data, you can completely remove all data stored in the app by uninstalling it.</p>
 
-    <h2>7. Right to lodge a complaint</h2>
-    <p>You have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR).</p>
+    <h2 id="en-website">5. This website</h2>
+    <p>This website is served via GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). When you open a page, GitHub processes technically necessary connection data, including your IP address; according to GitHub, every visitor's IP address is logged and stored for security purposes, even without signing in to GitHub. GitHub processes this data as an independent controller under its privacy statement and states no fixed retention period for these logs; we have no influence on this.</p>
+    <p>The website sets no cookies, contains no tracking and loads no fonts, scripts or other content from third parties.</p>
+    <p>The legal basis is Art. 6 (1) (f) GDPR; our legitimate interest is a secure, free and reliable provision of the mandatory information about the app. GitHub is certified under the EU-US Data Privacy Framework (adequacy decision of the European Commission, Art. 45 GDPR). GitHub's privacy statement: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>.</p>
 
-    <h2>8. Changes</h2>
-    <p>This privacy policy may be updated when app features change or legal requirements demand. The current version is available at this URL.</p>
+    <h2>6. Legal bases</h2>
+    <ul>
+      <li><strong>Processing on your devices and sync between them</strong> (3.1–3.7): the data does not reach us. The app stores and accesses it on the device because this is strictly necessary for the features you expressly use (Section 25 (2) No. 2 TDDDG; Art. 6 (1) (b) GDPR). The app uses the sensor, location, motion data, local network and notifications only with your permission in the system.</li>
+      <li><strong>Diagnostics data and support email</strong> (3.7, 3.8): Art. 6 (1) (b) GDPR (handling your request about the app) or (f) (legitimate interest in answering requests and fixing errors).</li>
+      <li><strong>Crash and performance data via Apple</strong> (4): your consent given to Apple, Art. 6 (1) (a) GDPR.</li>
+      <li><strong>Website</strong> (5): Art. 6 (1) (f) GDPR.</li>
+    </ul>
+
+    <h2>7. Recipients and transfers to third countries</h2>
+    <p>We do not pass data on to third parties and do not sell data. The only recipients are:</p>
+    <ul>
+      <li>your own paired devices (3.5);</li>
+      <li>the recipients you choose yourself when sharing a data export or diagnostics data;</li>
+      <li>our email service GMX (1&amp;1 Mail &amp; Media GmbH, Germany) for support emails;</li>
+      <li>GitHub, Inc. (USA) when you open this website (section 5);</li>
+      <li>Apple as independent controller for the services in section 4.</li>
+    </ul>
+    <p>A transfer to a third country takes place only when you open this website (GitHub, USA, EU-US Data Privacy Framework) and within Apple's services.</p>
+
+    <h2>8. Retention and deletion</h2>
+    <ul>
+      <li><strong>Readings:</strong> as long as set under <em>Speichern</em> (Store) (24 hours by default, at most 365 days); <em>Daten löschen</em> (Delete data) in Settings removes them immediately.</li>
+      <li><strong>Altitude:</strong> the most recently determined altitude, until replaced by a new one.</li>
+      <li><strong>Motion activity and steps:</strong> not stored.</li>
+      <li><strong>Diagnostics log:</strong> rolling, at most 512 KB.</li>
+      <li><strong>Settings:</strong> until you change them or delete the app. Deleting the app removes all of its data from the device.</li>
+      <li><strong>Export and diagnostics files for sharing:</strong> in the app's temporary directory, which the system cleans up itself; what you passed on is with the recipient you chose.</li>
+      <li><strong>Support emails and diagnostics data with us:</strong> until the request is closed, then deleted no later than 12 months afterwards.</li>
+      <li><strong>Website logs:</strong> according to GitHub's rules (section 5).</li>
+    </ul>
+
+    <h2>9. Obligation to provide data</h2>
+    <p>You are under no legal or contractual obligation to provide data. Without “Motion &amp; Fitness” access the app cannot measure air pressure; without location permission it shows only the uncorrected station pressure (QFE); without “Local Network” access there is no sync between iPhone and iPad; without notification permission no pressure alarm.</p>
+
+    <h2>10. No automated decision-making</h2>
+    <p>There is no automated decision-making, including profiling, within the meaning of Art. 22 GDPR.</p>
+
+    <h2>11. Your rights</h2>
+    <p>To the extent we process personal data about you (usually only for support requests), you have the right to:</p>
+    <ul>
+      <li>access (Art. 15 GDPR)</li>
+      <li>rectification (Art. 16 GDPR)</li>
+      <li>erasure (Art. 17 GDPR)</li>
+      <li>restriction of processing (Art. 18 GDPR)</li>
+      <li>data portability (Art. 20 GDPR)</li>
+      <li>object to processing based on Art. 6 (1) (f) GDPR (Art. 21 GDPR)</li>
+    </ul>
+    <p><strong>Withdrawal of consent</strong> (Art. 7 (3) GDPR): you can withdraw consent at any time with effect for the future — permissions for location, Motion &amp; Fitness, local network and notifications in system settings, sharing of analytics data under <em>Analytics &amp; Improvements</em>. The lawfulness of processing before the withdrawal remains unaffected.</p>
+    <p>You manage the data on your devices yourself: you can export and delete it in the app. Since we do not hold it, we cannot provide information about it or delete it for you.</p>
+    <p>An email to <a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a> is sufficient for any request.</p>
+
+    <h2>12. Right to lodge a complaint</h2>
+    <p>You have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR), in particular in the member state of your habitual residence. The authority responsible for us is:</p>
+    <p>
+      Sächsische Datenschutz- und Transparenzbeauftragte<br>
+      Maternistraße 17, 01067 Dresden, Germany<br>
+      Postal address: Postfach 11 01 32, 01330 Dresden<br>
+      Email: <a href="mailto:post@sdtb.sachsen.de">post@sdtb.sachsen.de</a><br>
+      <a href="https://www.datenschutz.sachsen.de/">www.datenschutz.sachsen.de</a>
+    </p>
+
+    <h2>13. Children</h2>
+    <p>BaroWatch is not directed at children and collects no age information.</p>
+
+    <h2>14. Changes</h2>
+    <p>We update this privacy policy when app features or legal requirements change. The current version is available at this address.</p>
+    <p>Version 2.0, as of 26 October 2026 (replaces the version of May 2026).</p>
   </section>
 
   <footer>
