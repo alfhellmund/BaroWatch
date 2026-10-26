@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1>Datenschutzerklärung</h1>
-    <p>BaroWatch — Fassung 2.0, Stand: 26. Oktober 2026</p>
+    <p>BaroWatch — Fassung 2.1, Stand: 26. Oktober 2026</p>
   </header>
 
   <div class="lang-switch">
@@ -46,31 +46,43 @@
 
     <h3>3.1 Luftdruck (Barometer)</h3>
     <p>BaroWatch liest den Luftdruck aus dem Barometer des Geräts. Dafür fragt das System nach der Freigabe „Bewegung &amp; Fitness“. Jeder Messwert wird mit Zeitpunkt, Quelle und — soweit bekannt — der Höhe über dem Meeresspiegel gespeichert, im gemeinsamen Speicher der App und ihrer Widgets auf dem Gerät (App-Gruppen-Container). Wie lange, stellen Sie in den Einstellungen unter <em>Speichern</em> ein (ab Werk 24 Stunden, wählbar von 1 Stunde bis 365 Tage); ältere Werte löscht die App selbst.</p>
+    <p><strong>Zweck:</strong> den Luftdruck anzeigen, als Verlauf, Statistik und Trend darstellen, den Druckalarm auswerten und die Widgets und Komplikationen versorgen.</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; den Sensor liest die App nur mit Ihrer Freigabe „Bewegung &amp; Fitness“ (siehe Abschnitt 6).</p>
 
     <h3>3.2 Standort (GPS-Höhe)</h3>
-    <p>BaroWatch nutzt die Ortungsdienste, um die Höhe über dem Meeresspiegel zu bestimmen. Sie wird gebraucht, um den gemessenen Stationsdruck (QFE) auf Meereshöhe (QNH) umzurechnen.</p>
+    <p>BaroWatch nutzt die Ortungsdienste, um die Höhe über dem Meeresspiegel zu bestimmen.</p>
+    <p><strong>Zweck:</strong> den gemessenen Stationsdruck (QFE) auf Meereshöhe (QNH) umrechnen; auf iPhone und iPad zusätzlich Druckmessungen im Hintergrund auslösen.</p>
     <ul>
       <li><strong>iPhone und iPad:</strong> Die App bittet um die Freigabe „Immer“. Damit kann sie auch im Hintergrund messen: Ortungsereignisse dienen als Auslöser für regelmäßige Druckmessungen, und bei einem deutlichen Ortswechsel startet das System die App neu. Während die App den Standort im Hintergrund nutzt, zeigt das System das übliche Ortungssymbol an.</li>
       <li><strong>Apple Watch:</strong> Die App nutzt den Standort nur „Beim Verwenden der App“.</li>
     </ul>
     <p><strong>Gespeichert wird nur die Höhe, nie die Position.</strong> Breiten- und Längengrad werden weder gespeichert noch übertragen. Gespeichert werden die zuletzt bestimmte Höhe mit Zeitpunkt, Genauigkeit und dem dazu gemessenen Druck sowie die Höhe an jedem Messwert (3.1).</p>
     <p>Sie können die Freigabe jederzeit in den Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Ortungsdienste → BaroWatch</em> ändern oder widerrufen. Ohne Freigabe zeigt die App den unkorrigierten Stationsdruck (QFE).</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; den Standort nutzt die App nur mit Ihrer Ortungsfreigabe (siehe Abschnitt 6).</p>
 
     <h3>3.3 Bewegungsaktivität und Schritte</h3>
-    <p>Mit der Freigabe „Bewegung &amp; Fitness“ fragt BaroWatch beim System die Bewegungsaktivität (z. B. in Ruhe, gehend, fahrend), die Schritte und — soweit das Gerät sie zählt — die Stockwerke der letzten Stunde ab. <strong>Zweck:</strong> festzustellen, ob sich das Gerät seit der letzten Höhenbestimmung bewegt hat; nur dann wird die Höhe neu bestimmt. Diese Werte werden nur für diese Entscheidung verwendet und nicht gespeichert; im Diagnoseprotokoll (3.6) kann das Ergebnis stehen (z. B. „in Ruhe“ oder „bewegt“).</p>
+    <p>Mit der Freigabe „Bewegung &amp; Fitness“ fragt BaroWatch beim System die Bewegungsaktivität (z. B. in Ruhe, gehend, fahrend), die Schritte und — soweit das Gerät sie zählt — die Stockwerke der letzten Stunde ab. Diese Werte werden nur für diese Entscheidung verwendet und nicht gespeichert; im Diagnoseprotokoll (3.6) kann das Ergebnis stehen (z. B. „in Ruhe“ oder „bewegt“).</p>
+    <p><strong>Zweck:</strong> feststellen, ob sich das Gerät seit der letzten Höhenbestimmung bewegt hat; nur dann wird die Höhe neu bestimmt.</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; die Daten fragt die App nur mit Ihrer Freigabe „Bewegung &amp; Fitness“ ab (siehe Abschnitt 6).</p>
 
     <h3>3.4 Benachrichtigungen</h3>
     <p>Auf Wunsch erzeugt die App lokale Benachrichtigungen, wenn sich der Luftdruck schneller ändert als der von Ihnen eingestellte Schwellenwert. Die Benachrichtigungen entstehen auf dem Gerät; es gibt keine Push-Mitteilungen über einen Server.</p>
+    <p><strong>Zweck:</strong> Sie auf eine schnelle Druckänderung hinweisen (Druckalarm).</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; Mitteilungen zeigt die App nur mit Ihrer Mitteilungsfreigabe (siehe Abschnitt 6).</p>
 
     <h3>3.5 Abgleich zwischen Ihren Geräten</h3>
     <ul>
-      <li><strong>iPhone und Apple Watch</strong> gleichen über WatchConnectivity (Apple-Framework) Messwerte mit Höhe, Einstellungen und Diagnosedaten der Watch ab.</li>
-      <li><strong>iPhone und iPad</strong> gleichen über MultipeerConnectivity (Apple-Framework) im lokalen Netzwerk bzw. über Bluetooth Messwerte und Einstellungen ab. Die Verbindung ist verschlüsselt und setzt einen sechsstelligen Kopplungscode voraus. Dafür fragt das System nach der Freigabe „Lokales Netzwerk“. Die Geräte sehen dabei die Gerätebezeichnung, die iOS der App mitteilt (ohne besondere Berechtigung nur die allgemeine Bezeichnung wie „iPhone“ oder „iPad“).</li>
+      <li><strong>iPhone und Apple Watch</strong> gleichen über WatchConnectivity (Apple-Framework) Messwerte mit Höhe und die Diagnosedaten der Watch ab.</li>
+      <li><strong>iPhone und iPad</strong> gleichen über MultipeerConnectivity (Apple-Framework) im lokalen Netzwerk bzw. über Bluetooth Messwerte ab. Die Verbindung ist verschlüsselt und setzt einen sechsstelligen Kopplungscode voraus. Dafür fragt das System nach der Freigabe „Lokales Netzwerk“. Die Geräte sehen dabei die Gerätebezeichnung, die iOS der App mitteilt (ohne besondere Berechtigung nur die allgemeine Bezeichnung wie „iPhone“ oder „iPad“).</li>
     </ul>
     <p>Kein Server ist beteiligt; die Daten gehen direkt zwischen Ihren eigenen Geräten.</p>
+    <p><strong>Zweck:</strong> dieselben Messwerte auf allen Ihren Geräten anzeigen; Einstellungen gelten je Gerät und werden nicht abgeglichen; die Diagnosedaten der Watch gelangen so in die Diagnosedaten des iPhones (3.7).</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; den Abgleich zwischen iPhone und iPad nutzt die App nur mit Ihrer Freigabe „Lokales Netzwerk“ und dem Kopplungscode (siehe Abschnitt 6).</p>
 
     <h3>3.6 Einstellungen und Diagnoseprotokoll</h3>
     <p>Einstellungen (z. B. Messintervall, Speicherdauer, Höhenmodus, eine von Hand eingegebene Höhe, Alarmschwelle) speichert die App auf dem Gerät. Ein technisches Diagnoseprotokoll hält fest, was die Hintergrundprozesse entschieden haben (Sensor, Höhenbestimmung, Abgleich, Hintergrundaktualisierung, Alarm) — ohne Koordinaten. Es ist auf 512 KB begrenzt; ältere Einträge fallen heraus.</p>
+    <p><strong>Zweck:</strong> Ihre Voreinstellungen anwenden; das Diagnoseprotokoll macht nachvollziehbar, was die Hintergrundprozesse entschieden haben, wenn Sie Diagnosedaten senden (3.7).</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO (siehe Abschnitt 6).</p>
 
     <h3>3.7 Datenexport und Diagnosedaten (nur auf Ihre Veranlassung)</h3>
     <ul>
@@ -78,16 +90,19 @@
       <li><strong>Diagnosedaten senden</strong> erzeugt eine Datei mit Gerätemodell-Kennung, Betriebssystemversion, App-Version, Stand der Freigaben, Einstellungen, Sensor- und Höhenzustand, Speicher- und Abgleichstatus, dem Diagnoseprotokoll von iPhone und Watch und den letzten Messwerten. <strong>Nie enthalten:</strong> Koordinaten und der Kopplungscode.</li>
     </ul>
     <p>Beide Dateien öffnen das Teilen-Fenster des Systems; dort wählen Sie selbst Empfänger und Weg. Es gibt keinen automatischen Versand.</p>
+    <p><strong>Zweck:</strong> Der Datenexport dient dazu, Ihre Messwerte außerhalb der App weiterzuverwenden; die Diagnosedaten dienen dazu, einen Fehler nachzuvollziehen und zu beheben. Schicken Sie sie uns, verwenden wir sie ausschließlich zur Bearbeitung Ihrer Anfrage (3.8).</p>
+    <p><strong>Rechtsgrundlage:</strong> für das Erstellen auf dem Gerät auf Ihre Veranlassung § 25 Abs. 2 Nr. 2 TDDDG; für die Bearbeitung bei uns Art. 6 Abs. 1 lit. b DSGVO, hilfsweise lit. f (siehe Abschnitt 6).</p>
 
     <h3>3.8 Support-Mail</h3>
     <p>Schreiben Sie uns — aus der Hilfe der App oder direkt —, verarbeiten wir Ihre E-Mail-Adresse, Ihren Namen, soweit angegeben, den Inhalt und ggf. beigefügte Diagnosedaten, um Ihre Anfrage zu beantworten. Das Postfach wird beim E-Mail-Dienst GMX geführt, einem Dienst der 1&amp;1 Mail &amp; Media GmbH, Montabaur, Deutschland.</p>
-
+    <p><strong>Zweck:</strong> Ihre Anfrage beantworten.</p>
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, hilfsweise lit. f (siehe Abschnitt 6).</p>
 
     <h2>4. Apple-Plattformdienste</h2>
-    <p>Die folgenden Verarbeitungen führt Apple als eigener Verantwortlicher durch; wir haben darauf keinen Einfluss. Es gelten die Datenschutzbestimmungen von Apple: <a href="https://www.apple.com/de/legal/privacy/">apple.com/de/legal/privacy</a>.</p>
+    <p>Die folgenden Verarbeitungen führt Apple als eigener Verantwortlicher durch; wir haben darauf keinen Einfluss. Es gelten die Datenschutzbestimmungen von Apple: <a href="https://www.apple.com/de/legal/privacy/">apple.com/de/legal/privacy</a>. Personenbezogene Daten erhalten wir dabei nur bei den Absturz- und Leistungsdaten; Zweck und Rechtsgrundlage stehen dort.</p>
     <ul>
       <li><strong>App Store:</strong> Kauf, Download und Updates wickelt Apple ab. Wir erhalten von Apple nur zusammengefasste Statistiken ohne Personenbezug.</li>
-      <li><strong>Absturz- und Leistungsdaten:</strong> Haben Sie in den Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen</em> „Mit App-Entwicklern teilen“ eingeschaltet, stellt Apple uns Absturzberichte und zusammengefasste Leistungsdaten zur Verfügung. Ohne diese Einwilligung erhalten wir nichts.</li>
+      <li><strong>Absturz- und Leistungsdaten:</strong> Haben Sie in den Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen</em> „Mit App-Entwicklern teilen“ eingeschaltet, stellt Apple uns Absturzberichte und zusammengefasste Leistungsdaten zur Verfügung. Ohne diese Einwilligung erhalten wir nichts. <strong>Zweck:</strong> Abstürze und Leistungsprobleme der App erkennen und beheben. <strong>Rechtsgrundlage:</strong> Ihre Einwilligung gegenüber Apple, Art. 6 Abs. 1 lit. a DSGVO (siehe Abschnitt 6).</li>
       <li><strong>Gerätesicherung:</strong> Ist eine iCloud-Sicherung oder eine Sicherung auf einem Computer eingeschaltet, sind die Daten der App — wie die anderer Apps — Teil dieser Gerätesicherung. Diese richtet das Betriebssystem nach Ihrer Einstellung ein, nicht BaroWatch.</li>
     </ul>
 
@@ -98,8 +113,8 @@
 
     <h2>6. Rechtsgrundlagen</h2>
     <ul>
-      <li><strong>Verarbeitung auf Ihren Geräten und Abgleich zwischen ihnen</strong> (3.1–3.7): Die Daten erreichen uns nicht. Die App speichert sie auf dem Gerät und greift auf sie zu, weil das für die von Ihnen ausdrücklich genutzten Funktionen unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG; Art. 6 Abs. 1 lit. b DSGVO). Sensor, Standort, Bewegungsdaten, lokales Netzwerk und Benachrichtigungen nutzt die App nur mit Ihrer Freigabe im System.</li>
-      <li><strong>Diagnosedaten und Support-Mail</strong> (3.7, 3.8): Art. 6 Abs. 1 lit. b DSGVO (Bearbeitung Ihrer Anfrage zur App) bzw. lit. f (berechtigtes Interesse, Anfragen zu beantworten und Fehler zu beheben).</li>
+      <li><strong>Verarbeitung auf Ihren Geräten und Abgleich zwischen ihnen</strong> (3.1–3.6 und das Erstellen von Datenexport und Diagnosedaten in 3.7): Die Daten erreichen uns nicht. Die App speichert sie auf dem Gerät und greift auf sie zu, weil das für die von Ihnen ausdrücklich genutzten Funktionen unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG); soweit personenbezogene Daten verarbeitet werden, ist das zur Nutzung der App erforderlich (Art. 6 Abs. 1 lit. b DSGVO). Sensor und Bewegungsdaten (3.1, 3.3), Standort (3.2), Mitteilungen (3.4) und lokales Netzwerk (3.5) nutzt die App nur mit Ihrer Freigabe im System.</li>
+      <li><strong>Diagnosedaten und Support-Mail bei uns</strong> (3.7, 3.8): Art. 6 Abs. 1 lit. b DSGVO (Bearbeitung Ihrer Anfrage zur App), hilfsweise lit. f (berechtigtes Interesse, Anfragen zu beantworten und Fehler zu beheben).</li>
       <li><strong>Absturz- und Leistungsdaten über Apple</strong> (4): Ihre Einwilligung gegenüber Apple, Art. 6 Abs. 1 lit. a DSGVO.</li>
       <li><strong>Website</strong> (5): Art. 6 Abs. 1 lit. f DSGVO.</li>
     </ul>
@@ -162,7 +177,7 @@
 
     <h2>14. Änderungen</h2>
     <p>Wir passen diese Datenschutzerklärung an, wenn sich Funktionen der App oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung ist unter dieser Adresse erreichbar.</p>
-    <p>Fassung 2.0, Stand: 26. Oktober 2026 (ersetzt die Fassung vom Mai 2026).</p>
+    <p>Fassung 2.1, Stand: 26. Oktober 2026 (ersetzt die Fassungen 2.0 vom 26. Oktober 2026 und vom Mai 2026).</p>
   </section>
 
   <hr class="section">
@@ -195,31 +210,43 @@
 
     <h3>3.1 Air pressure (barometer)</h3>
     <p>BaroWatch reads the air pressure from the device's barometer. The system asks for “Motion &amp; Fitness” access for this. Each reading is stored with time, source and — if known — the altitude above sea level, in the storage shared by the app and its widgets on the device (App Group container). You set how long under <em>Speichern</em> (Store) in Settings (24 hours by default, from 1 hour to 365 days); the app deletes older values itself.</p>
+    <p><strong>Purpose:</strong> to display the air pressure, show it as history, statistics and trend, evaluate the pressure alarm and feed the widgets and complications.</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app reads the sensor only with your “Motion &amp; Fitness” permission (see section 6).</p>
 
     <h3>3.2 Location (GPS altitude)</h3>
-    <p>BaroWatch uses location services to determine the altitude above sea level. It is needed to convert the measured station pressure (QFE) to sea-level pressure (QNH).</p>
+    <p>BaroWatch uses location services to determine the altitude above sea level.</p>
+    <p><strong>Purpose:</strong> to convert the measured station pressure (QFE) to sea-level pressure (QNH); on iPhone and iPad also to trigger pressure readings in the background.</p>
     <ul>
       <li><strong>iPhone and iPad:</strong> the app asks for “Always” access. This lets it measure in the background as well: location events trigger periodic pressure readings, and after a significant change of location the system relaunches the app. While the app uses location in the background, the system shows the usual location indicator.</li>
       <li><strong>Apple Watch:</strong> the app uses location only “While Using the App”.</li>
     </ul>
     <p><strong>Only the altitude is stored, never the position.</strong> Latitude and longitude are neither stored nor transmitted. Stored are the most recently determined altitude with time, accuracy and the pressure measured with it, and the altitude at each reading (3.1).</p>
     <p>You can change or revoke permission at any time in system settings under <em>Privacy &amp; Security → Location Services → BaroWatch</em>. Without permission, the app shows the uncorrected station pressure (QFE).</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app uses location only with your location permission (see section 6).</p>
 
     <h3>3.3 Motion activity and steps</h3>
-    <p>With “Motion &amp; Fitness” access, BaroWatch queries the system for the motion activity (e.g. stationary, walking, driving), the steps and — where the device counts them — the floors of the last hour. <strong>Purpose:</strong> to determine whether the device has moved since the altitude was last determined; only then is the altitude determined again. These values are used only for this decision and are not stored; the diagnostics log (3.6) may contain the result (e.g. “stationary” or “moved”).</p>
+    <p>With “Motion &amp; Fitness” access, BaroWatch queries the system for the motion activity (e.g. stationary, walking, driving), the steps and — where the device counts them — the floors of the last hour. These values are used only for this decision and are not stored; the diagnostics log (3.6) may contain the result (e.g. “stationary” or “moved”).</p>
+    <p><strong>Purpose:</strong> to determine whether the device has moved since the altitude was last determined; only then is the altitude determined again.</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app queries this data only with your “Motion &amp; Fitness” permission (see section 6).</p>
 
     <h3>3.4 Notifications</h3>
     <p>If you wish, the app creates local notifications when air pressure changes faster than the threshold you set. The notifications are generated on the device; there are no push notifications via a server.</p>
+    <p><strong>Purpose:</strong> to alert you to a rapid pressure change (pressure alarm).</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app shows notifications only with your notification permission (see section 6).</p>
 
     <h3>3.5 Sync between your devices</h3>
     <ul>
-      <li><strong>iPhone and Apple Watch</strong> exchange readings with altitude, settings and the Watch's diagnostics data via WatchConnectivity (Apple framework).</li>
-      <li><strong>iPhone and iPad</strong> exchange readings and settings via MultipeerConnectivity (Apple framework) over the local network or Bluetooth. The connection is encrypted and requires a six-digit pairing code. The system asks for “Local Network” access for this. The devices see the device name iOS provides to the app (without special entitlement only the generic name such as “iPhone” or “iPad”).</li>
+      <li><strong>iPhone and Apple Watch</strong> exchange readings with altitude and the Watch's diagnostics data via WatchConnectivity (Apple framework).</li>
+      <li><strong>iPhone and iPad</strong> exchange readings via MultipeerConnectivity (Apple framework) over the local network or Bluetooth. The connection is encrypted and requires a six-digit pairing code. The system asks for “Local Network” access for this. The devices see the device name iOS provides to the app (without special entitlement only the generic name such as “iPhone” or “iPad”).</li>
     </ul>
     <p>No server is involved; data goes directly between your own devices.</p>
+    <p><strong>Purpose:</strong> to show the same readings on all your devices; settings apply per device and are not synchronised; this is also how the Watch's diagnostics data reaches the iPhone's diagnostics data (3.7).</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app uses the iPhone–iPad sync only with your “Local Network” permission and the pairing code (see section 6).</p>
 
     <h3>3.6 Settings and diagnostics log</h3>
     <p>The app stores settings (e.g. sampling interval, retention, altitude mode, a manually entered altitude, alarm threshold) on the device. A technical diagnostics log records what the background processes decided (sensor, altitude determination, sync, background refresh, alarm) — without coordinates. It is limited to 512 KB; older entries drop out.</p>
+    <p><strong>Purpose:</strong> to apply your preferences; the diagnostics log makes traceable what the background processes decided when you send diagnostics data (3.7).</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR (see section 6).</p>
 
     <h3>3.7 Data export and diagnostics data (only at your request)</h3>
     <ul>
@@ -227,16 +254,19 @@
       <li><strong>Send diagnostics data</strong> creates a file with device model identifier, operating system version, app version, permission states, settings, sensor and altitude state, storage and sync status, the diagnostics log of iPhone and Watch, and the latest readings. <strong>Never included:</strong> coordinates and the pairing code.</li>
     </ul>
     <p>Both open the system share sheet; there you choose recipient and channel yourself. There is no automatic sending.</p>
+    <p><strong>Purpose:</strong> The data export lets you use your readings outside the app; the diagnostics data serves to trace and fix an error. If you send it to us, we use it exclusively to handle your request (3.8).</p>
+    <p><strong>Legal basis:</strong> for creating it on the device at your request Section 25 (2) No. 2 TDDDG; for handling it with us Art. 6 (1) (b) GDPR, alternatively (f) (see section 6).</p>
 
     <h3>3.8 Support email</h3>
     <p>If you write to us — from the app's help or directly — we process your email address, your name if given, the content and any attached diagnostics data to answer your request. The mailbox is hosted by the email service GMX, a service of 1&amp;1 Mail &amp; Media GmbH, Montabaur, Germany.</p>
-
+    <p><strong>Purpose:</strong> to answer your request.</p>
+    <p><strong>Legal basis:</strong> Art. 6 (1) (b) GDPR, alternatively (f) (see section 6).</p>
 
     <h2>4. Apple platform services</h2>
-    <p>Apple performs the following processing as an independent controller; we have no influence on it. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/en-ww/">apple.com/legal/privacy</a>.</p>
+    <p>Apple performs the following processing as an independent controller; we have no influence on it. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/en-ww/">apple.com/legal/privacy</a>. We receive personal data only with the crash and performance data; purpose and legal basis are stated there.</p>
     <ul>
       <li><strong>App Store:</strong> Apple handles purchase, download and updates. We receive only aggregated statistics from Apple without personal reference.</li>
-      <li><strong>Crash and performance data:</strong> if you have switched on “Share With App Developers” in system settings under <em>Privacy &amp; Security → Analytics &amp; Improvements</em>, Apple provides us with crash reports and aggregated performance data. Without this consent we receive nothing.</li>
+      <li><strong>Crash and performance data:</strong> if you have switched on “Share With App Developers” in system settings under <em>Privacy &amp; Security → Analytics &amp; Improvements</em>, Apple provides us with crash reports and aggregated performance data. Without this consent we receive nothing. <strong>Purpose:</strong> to detect and fix crashes and performance problems of the app. <strong>Legal basis:</strong> your consent given to Apple, Art. 6 (1) (a) GDPR (see section 6).</li>
       <li><strong>Device backup:</strong> if an iCloud backup or a backup to a computer is enabled, the app's data — like that of other apps — is part of this device backup. The operating system sets it up according to your setting, not BaroWatch.</li>
     </ul>
 
@@ -247,8 +277,8 @@
 
     <h2>6. Legal bases</h2>
     <ul>
-      <li><strong>Processing on your devices and sync between them</strong> (3.1–3.7): the data does not reach us. The app stores and accesses it on the device because this is strictly necessary for the features you expressly use (Section 25 (2) No. 2 TDDDG; Art. 6 (1) (b) GDPR). The app uses the sensor, location, motion data, local network and notifications only with your permission in the system.</li>
-      <li><strong>Diagnostics data and support email</strong> (3.7, 3.8): Art. 6 (1) (b) GDPR (handling your request about the app) or (f) (legitimate interest in answering requests and fixing errors).</li>
+      <li><strong>Processing on your devices and sync between them</strong> (3.1–3.6 and creating the data export and diagnostics data in 3.7): the data does not reach us. The app stores and accesses it on the device because this is strictly necessary for the features you expressly use (Section 25 (2) No. 2 TDDDG); insofar as personal data is processed, this is necessary for using the app (Art. 6 (1) (b) GDPR). The app uses the sensor and motion data (3.1, 3.3), location (3.2), notifications (3.4) and the local network (3.5) only with your permission in the system.</li>
+      <li><strong>Diagnostics data and support email with us</strong> (3.7, 3.8): Art. 6 (1) (b) GDPR (handling your request about the app), alternatively (f) (legitimate interest in answering requests and fixing errors).</li>
       <li><strong>Crash and performance data via Apple</strong> (4): your consent given to Apple, Art. 6 (1) (a) GDPR.</li>
       <li><strong>Website</strong> (5): Art. 6 (1) (f) GDPR.</li>
     </ul>
@@ -311,7 +341,7 @@
 
     <h2>14. Changes</h2>
     <p>We update this privacy policy when app features or legal requirements change. The current version is available at this address.</p>
-    <p>Version 2.0, as of 26 October 2026 (replaces the version of May 2026).</p>
+    <p>Version 2.1, as of 26 October 2026 (replaces version 2.0 of 26 October 2026 and the version of May 2026).</p>
   </section>
 
   <footer>
