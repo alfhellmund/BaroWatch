@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 사용자 기기 간 동기화</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone과 Apple Watch</strong>는 WatchConnectivity(Apple 프레임워크)를 통해 고도가 포함된 측정값과 Watch의 진단 데이터를 동기화합니다.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone과 iPad</strong>는 MultipeerConnectivity(Apple 프레임워크)를 통해 로컬 네트워크 또는 Bluetooth로 측정값을 동기화합니다. 연결은 암호화되며 여섯 자리 페어링 코드가 필요합니다. 이를 위해 시스템이 ‘로컬 네트워크’ 권한을 요청합니다. 이때 기기들은 iOS가 앱에 알려 주는 기기 이름을 보게 됩니다(특별한 권한이 없으면 ‘iPhone’ 또는 ‘iPad’와 같은 일반적인 이름만).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone과 iPad</strong>는 MultipeerConnectivity(Apple 프레임워크)를 통해 로컬 네트워크 또는 Bluetooth로 측정값을 동기화합니다. 연결은 암호화되며 여섯 자리 동기화 코드가 필요합니다. 이를 위해 시스템이 ‘로컬 네트워크’ 권한을 요청합니다. 이때 기기들은 iOS가 앱에 알려 주는 기기 이름을 보게 됩니다(특별한 권한이 없으면 ‘iPhone’ 또는 ‘iPad’와 같은 일반적인 이름만).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">서버는 관여하지 않으며, 데이터는 사용자 본인의 기기 사이에서 직접 전송됩니다.</p>
     <p data-quelle="f10868003f55"><strong>목적:</strong> 사용자의 모든 기기에 동일한 측정값을 표시하기 위함입니다. 설정은 기기별로 적용되며 동기화되지 않습니다. 이를 통해 Watch의 진단 데이터가 iPhone의 진단 데이터(3.7)에 포함됩니다.</p>
-    <p data-quelle="a9e3097b48c4"><strong>법적 근거:</strong> TDDDG 제25조 제2항 제2호, GDPR 제6조(1)의 (b)호. 앱은 사용자의 ‘로컬 네트워크’ 권한과 페어링 코드가 있을 때만 iPhone과 iPad 간 동기화를 사용합니다(섹션 6 참조).</p>
+    <p data-quelle="aabd50c32d05"><strong>법적 근거:</strong> TDDDG 제25조 제2항 제2호, GDPR 제6조(1)의 (b)호. 앱은 사용자의 ‘로컬 네트워크’ 권한과 동기화 코드가 있을 때만 iPhone과 iPad 간 동기화를 사용합니다(섹션 6 참조).</p>
 
     <h3 data-quelle="6056798704bb">3.6 설정 및 진단 로그</h3>
     <p data-quelle="cdeb969815a9">앱은 설정(예: 측정 간격, 보관 기간, 고도 모드, 직접 입력한 고도, 경보 임곗값)을 기기에 저장합니다. 기술적인 진단 로그는 백그라운드 프로세스가 어떤 결정을 내렸는지(센서, 고도 확인, 동기화, 백그라운드 새로 고침, 경보)를 좌표 없이 기록합니다. 로그 크기는 512 KB로 제한되며, 오래된 항목은 삭제됩니다.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 데이터 내보내기 및 진단 데이터(사용자의 요청이 있을 때만)</h3>
     <ul>
       <li data-quelle="2482443ad25e">설정의 <strong>데이터 내보내기 (JSON)</strong>는 저장된 측정값(기압, 시각, 출처, 고도)이 담긴 파일을 생성합니다.</li>
-      <li data-quelle="5edff8067d7a"><strong>진단 데이터 보내기</strong>는 기기 모델 식별자, 운영 체제 버전, 앱 버전, 권한 상태, 설정, 센서 및 고도 상태, 저장 및 동기화 상태, iPhone과 Watch의 진단 로그, 최근 측정값이 담긴 파일을 생성합니다. <strong>절대 포함되지 않는 항목:</strong> 좌표와 페어링 코드.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>진단 데이터 보내기</strong>는 기기 모델 식별자, 운영 체제 버전, 앱 버전, 권한 상태, 설정, 센서 및 고도 상태, 저장 및 동기화 상태, iPhone과 Watch의 진단 로그, 최근 측정값이 담긴 파일을 생성합니다. <strong>절대 포함되지 않는 항목:</strong> 좌표와 동기화 코드.</li>
     </ul>
     <p data-quelle="0340d0186391">두 파일 모두 시스템의 공유 시트를 엽니다. 여기서 수신자와 전달 방법을 사용자가 직접 선택합니다. 자동 전송은 없습니다.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>목적:</strong> 데이터 내보내기는 사용자의 측정값을 앱 밖에서 활용하기 위한 것이고, 진단 데이터는 오류를 추적하고 수정하기 위한 것입니다. 사용자가 이를 당사에 보내는 경우, 당사는 오로지 사용자의 문의를 처리하는 데에만 사용합니다(3.8).</p>
