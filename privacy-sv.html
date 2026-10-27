@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Synkronisering mellan dina enheter</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone och Apple Watch</strong> synkroniserar via WatchConnectivity (Apple-ramverk) mätvärden med höjd och Watchens diagnostikdata.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone och iPad</strong> synkroniserar mätvärden via MultipeerConnectivity (Apple-ramverk) i det lokala nätverket eller via Bluetooth. Anslutningen är krypterad och kräver en sexsiffrig parkopplingskod. För detta frågar systemet efter tillståndet ”Lokalt nätverk”. Enheterna ser därvid den enhetsbeteckning som iOS ger appen (utan särskild behörighet bara den allmänna beteckningen som ”iPhone” eller ”iPad”).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone och iPad</strong> synkroniserar mätvärden via MultipeerConnectivity (Apple-ramverk) i det lokala nätverket eller via Bluetooth. Anslutningen är krypterad och kräver en sexsiffrig synkkod. För detta frågar systemet efter tillståndet ”Lokalt nätverk”. Enheterna ser därvid den enhetsbeteckning som iOS ger appen (utan särskild behörighet bara den allmänna beteckningen som ”iPhone” eller ”iPad”).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Ingen server är inblandad; uppgifterna går direkt mellan dina egna enheter.</p>
     <p data-quelle="f10868003f55"><strong>Ändamål:</strong> att visa samma mätvärden på alla dina enheter; inställningar gäller per enhet och synkroniseras inte; på så sätt når Watchens diagnostikdata in i iPhonens diagnostikdata (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Rättslig grund:</strong> § 25 stycke 2 punkt 2 TDDDG, artikel 6.1 b i GDPR; synkroniseringen mellan iPhone och iPad använder appen bara med ditt tillstånd ”Lokalt nätverk” och parkopplingskoden (se avsnitt 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Rättslig grund:</strong> § 25 stycke 2 punkt 2 TDDDG, artikel 6.1 b i GDPR; synkroniseringen mellan iPhone och iPad använder appen bara med ditt tillstånd ”Lokalt nätverk” och synkkoden (se avsnitt 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Inställningar och diagnostiklogg</h3>
     <p data-quelle="cdeb969815a9">Inställningar (t.ex. mätintervall, lagringstid, höjdläge, en manuellt angiven höjd, larmtröskel) sparar appen på enheten. En teknisk diagnostiklogg registrerar vad bakgrundsprocesserna har beslutat (sensor, höjdbestämning, synkronisering, bakgrundsuppdatering, larm) — utan koordinater. Den är begränsad till 512 KB; äldre poster faller bort.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Dataexport och diagnostikdata (endast på din begäran)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Dataexport (JSON)</strong> i inställningarna skapar en fil med de sparade mätvärdena (tryck, tid, källa, höjd).</li>
-      <li data-quelle="5edff8067d7a"><strong>Skicka diagnostikdata</strong> skapar en fil med enhetsmodellens identifierare, operativsystemversion, appversion, status för tillstånden, inställningar, sensor- och höjdstatus, lagrings- och synkroniseringsstatus, diagnostikloggen från iPhone och Watch och de senaste mätvärdena. <strong>Ingår aldrig:</strong> koordinater och parkopplingskoden.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Skicka diagnostikdata</strong> skapar en fil med enhetsmodellens identifierare, operativsystemversion, appversion, status för tillstånden, inställningar, sensor- och höjdstatus, lagrings- och synkroniseringsstatus, diagnostikloggen från iPhone och Watch och de senaste mätvärdena. <strong>Ingår aldrig:</strong> koordinater och synkkoden.</li>
     </ul>
     <p data-quelle="0340d0186391">Båda filerna öppnar systemets delningsmeny; där väljer du själv mottagare och väg. Det sker inget automatiskt utskick.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Ändamål:</strong> Dataexporten gör att du kan använda dina mätvärden utanför appen; diagnostikdata används för att spåra och åtgärda ett fel. Om du skickar dem till oss använder vi dem uteslutande för att hantera din förfrågan (3.8).</p>
