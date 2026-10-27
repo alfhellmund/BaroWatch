@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 您的裝置之間的同步</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone 與 Apple Watch</strong> 透過 WatchConnectivity（Apple 框架）同步含高度的測量值及 Watch 的診斷資料。</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone 與 iPad</strong> 透過 MultipeerConnectivity（Apple 框架）在區域網路中或經由藍牙同步測量值。連線經過加密，且須使用六位數的配對碼。為此，系統會請求「區域網路」權限。此時各裝置可看到 iOS 提供給 App 的裝置名稱（未具特殊權限時，僅為「iPhone」或「iPad」等一般名稱）。</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone 與 iPad</strong> 透過 MultipeerConnectivity（Apple 框架）在區域網路中或經由藍牙同步測量值。連線經過加密，且須使用六位數的同步代碼。為此，系統會請求「區域網路」權限。此時各裝置可看到 iOS 提供給 App 的裝置名稱（未具特殊權限時，僅為「iPhone」或「iPad」等一般名稱）。</li>
     </ul>
     <p data-quelle="e8f40cd065e2">過程中不涉及任何伺服器；資料直接在您自己的裝置之間傳輸。</p>
     <p data-quelle="f10868003f55"><strong>目的：</strong>在您所有裝置上顯示相同的測量值；設定依各裝置個別適用，不會同步；Watch 的診斷資料也藉此納入 iPhone 的診斷資料（3.7）。</p>
-    <p data-quelle="a9e3097b48c4"><strong>法律依據：</strong>TDDDG 第 25 條第 2 項第 2 款、GDPR 第 6 條第 1 項第 b 點；App 僅在您授予「區域網路」權限並輸入配對碼時使用 iPhone 與 iPad 之間的同步（參見第 6 節）。</p>
+    <p data-quelle="aabd50c32d05"><strong>法律依據：</strong>TDDDG 第 25 條第 2 項第 2 款、GDPR 第 6 條第 1 項第 b 點；App 僅在您授予「區域網路」權限並輸入同步代碼時使用 iPhone 與 iPad 之間的同步（參見第 6 節）。</p>
 
     <h3 data-quelle="6056798704bb">3.6 設定與診斷記錄</h3>
     <p data-quelle="cdeb969815a9">App 將設定（例如測量間隔、儲存期間、高度模式、手動輸入的高度、警報門檻值）儲存在裝置上。技術性的診斷記錄會記下背景程序所做的決定（感測器、高度測定、同步、背景重新整理、警報），不含座標。其大小上限為 512 KB；較舊的項目會被移除。</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 資料匯出與診斷資料（僅依您的指示）</h3>
     <ul>
       <li data-quelle="2482443ad25e">設定中的<strong>資料匯出（JSON）</strong>會產生一個檔案，內含已儲存的測量值（氣壓、時間、來源、高度）。</li>
-      <li data-quelle="5edff8067d7a"><strong>傳送診斷資料</strong>會產生一個檔案，內含裝置型號識別碼、作業系統版本、App 版本、各項權限狀態、設定、感測器與高度狀態、儲存與同步狀態、iPhone 與 Watch 的診斷記錄，以及最近的測量值。<strong>絕不包含：</strong>座標與配對碼。</li>
+      <li data-quelle="7891b3d9b5fa"><strong>傳送診斷資料</strong>會產生一個檔案，內含裝置型號識別碼、作業系統版本、App 版本、各項權限狀態、設定、感測器與高度狀態、儲存與同步狀態、iPhone 與 Watch 的診斷記錄，以及最近的測量值。<strong>絕不包含：</strong>座標與同步代碼。</li>
     </ul>
     <p data-quelle="0340d0186391">兩者都會開啟系統的分享選單；收件者與傳送方式由您自行選擇。不會自動傳送。</p>
     <p data-quelle="3d1b9f41dfd5"><strong>目的：</strong>資料匯出讓您可在 App 以外繼續使用您的測量值；診斷資料用於追溯並修正錯誤。若您將其寄給我們，我們僅將其用於處理您的請求（3.8）。</p>
