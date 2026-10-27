@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-quelle="b29d18120f8e">プライバシーポリシー — BaroWatch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1 data-quelle="a1235efbc18d">プライバシーポリシー</h1>
+    <p data-quelle="b6f912c1d561">BaroWatch — 第2.2版、<time class="stand" datetime="2026-10-27">2026年10月27日</time>現在</p>
+    <p><a class="andere-sprachen" href="privacy.html" data-quelle="84041901390a">他の言語</a></p>
+  </header>
+
+  <section id="ja">
+    <p data-quelle="fa6bf038904d"><em>本プライバシーポリシーは複数の言語で提供されています。内容に相違がある場合は、<a href="privacy-de.html">ドイツ語版</a>が優先します。</em></p>
+
+    <h2 data-quelle="11cf50c9ecc6">1. 管理者</h2>
+    <p data-quelle="a5c3615e52c0">アプリBaroWatchおよび本ウェブサイトに関するGDPR第4条第7号の意味における管理者：</p>
+    <p data-quelle="50e221de8395">Alf Hellmund<br> Ehrensteinstr. 17<br> 04105 Leipzig<br> ドイツ<br> メール：<a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a></p>
+    <p data-quelle="6ea9d5e76472">データ保護に関するご質問およびお客様の権利の行使には、このアドレスへのメールで足ります。データ保護オフィサーは選任していません。選任の義務はありません（GDPR第37条、BDSG第38条）。</p>
+
+    <h2 data-quelle="72b8ca7957a5">2. 概要</h2>
+    <p data-quelle="3779de9c648b">BaroWatchは、気圧を測定して表示するiPhone、iPadおよびApple Watch用のアプリです。すべての計算はお客様のデバイス上で行われます。</p>
+    <ul>
+      <li data-quelle="429200c6319c">BaroWatchは、当方にも第三者にもデータを送信しません。サーバー、アカウント、iCloudによる同期はありません。</li>
+      <li data-quelle="434c1209ad66">トラッキング、広告、プロファイリング、第三者の解析用または広告用SDKは一切ありません。</li>
+      <li data-quelle="4e3a735ce698">データの同期はお客様ご自身のデバイス間でのみ行われます（第3.5節）。それ以外にデータがデバイスから出るのは、お客様ご自身がデータエクスポート、診断データまたはサポートメールとして渡す場合に限られます。</li>
+    </ul>
+
+    <h2 data-quelle="777b56d15ffd">3. アプリ内のデータ</h2>
+    <p data-quelle="548135f7c03a">BaroWatchは、以下のデータをもっぱらお客様のデバイス上で取り扱います。お客様から当方に送信されない限り、提供者である当方はこれらのデータを一切受け取りません。</p>
+
+    <h3 data-quelle="4e338ab51122">3.1 気圧（気圧計）</h3>
+    <p data-quelle="42ec9c38b84d">BaroWatchは、デバイスの気圧計から気圧を読み取ります。そのためにシステムが「モーションとフィットネス」の許可を求めます。各測定値は、時刻、取得元および（判明している場合は）海抜高度とともに、デバイス上のアプリとそのウィジェットの共有ストレージ（App Groupコンテナ）に記録保存されます。記録保存する期間は、設定の<em>保存</em>で指定します（初期設定は24時間、1時間から365日まで選択可能）。それより古い値はアプリ自身が削除します。</p>
+    <p data-quelle="0530ec836c07"><strong>目的：</strong>気圧を表示し、履歴、統計および傾向として示し、気圧アラームを評価し、ウィジェットとコンプリケーションにデータを提供すること。</p>
+    <p data-quelle="0783b47a54e2"><strong>法的根拠：</strong>TDDDG第25条第2項第2号、GDPR第6条第1項(b)。アプリは、お客様による「モーションとフィットネス」の許可がある場合にのみセンサーを読み取ります（第6節参照）。</p>
+
+    <h3 data-quelle="e5655997a96b">3.2 位置情報（GPS高度）</h3>
+    <p data-quelle="6069edd46298">BaroWatchは、海抜高度を求めるために位置情報サービスを利用します。</p>
+    <p data-quelle="d00900eb10a5"><strong>目的：</strong>測定した現地気圧（QFE）を海面気圧（QNH）に換算すること。iPhoneとiPadでは、さらにバックグラウンドで気圧測定を開始すること。</p>
+    <ul>
+      <li data-quelle="322fe5ce853a"><strong>iPhoneとiPad：</strong>アプリは「常に」の許可を求めます。これによりバックグラウンドでも測定できます。位置情報イベントが定期的な気圧測定のきっかけとなり、大きく場所が変わるとシステムがアプリを再起動します。アプリがバックグラウンドで位置情報を利用している間、システムは通常の位置情報アイコンを表示します。</li>
+      <li data-quelle="cbcf10d55143"><strong>Apple Watch：</strong>アプリは位置情報を「このアプリの使用中」のみ利用します。</li>
+    </ul>
+    <p data-quelle="75ec9ec9150a"><strong>記録保存されるのは高度のみで、位置は決して記録保存されません。</strong>緯度と経度は記録保存も送信もされません。記録保存されるのは、最後に求めた高度とその時刻、精度およびそのとき測定した気圧、ならびに各測定値の高度（第3.1節）です。</p>
+    <p data-quelle="5fa9478c86e8">許可は、システムの設定の<em>プライバシーとセキュリティ → 位置情報サービス → BaroWatch</em>でいつでも変更または撤回できます。</p>
+    <p data-quelle="1a4bb1cf8620">許可がない場合、アプリは補正されていない現地気圧（QFE）を表示します。</p>
+    <p data-quelle="2fc8a0eb42b4"><strong>法的根拠：</strong>TDDDG第25条第2項第2号、GDPR第6条第1項(b)。アプリは、お客様による位置情報の許可がある場合にのみ位置情報を利用します（第6節参照）。</p>
+
+    <h3 data-quelle="1d8ed48364cc">3.3 モーションアクティビティと歩数</h3>
+    <p data-quelle="fc48a816a201">「モーションとフィットネス」の許可がある場合、BaroWatchはシステムに対し、直近一時間のモーションアクティビティ（例：静止、歩行、乗り物で移動）、歩数および（デバイスが数える場合は）上った階数を照会します。これらの値はこの判断にのみ使用され、記録保存されません。診断ログ（第3.6節）には結果（例：「静止」または「移動」）が含まれることがあります。</p>
+    <p data-quelle="05d467b9878c"><strong>目的：</strong>前回高度を求めてからデバイスが移動したかどうかを判断すること。移動した場合にのみ、高度を改めて求めます。</p>
+    <p data-quelle="49d67f5367a3"><strong>法的根拠：</strong>TDDDG第25条第2項第2号、GDPR第6条第1項(b)。アプリは、お客様による「モーションとフィットネス」の許可がある場合にのみこれらのデータを照会します（第6節参照）。</p>
+
+    <h3 data-quelle="f7205df4f1e2">3.4 通知</h3>
+    <p data-quelle="57bb3dcd5e25">ご希望に応じて、気圧がお客様の設定したしきい値より速く変化したときに、アプリはローカル通知を作成します。通知はデバイス上で作成され、サーバーを介したプッシュ通知はありません。</p>
+    <p data-quelle="20fe7db90abe"><strong>目的：</strong>急な気圧変化をお知らせすること（気圧アラーム）。</p>
+    <p data-quelle="7a3971568d04"><strong>法的根拠：</strong>TDDDG第25条第2項第2号、GDPR第6条第1項(b)。アプリは、お客様による通知の許可がある場合にのみ通知を表示します（第6節参照）。</p>
+
+    <h3 data-quelle="aed3a4251f58">3.5 お客様のデバイス間の同期</h3>
+    <ul>
+      <li data-quelle="b3b73773d997"><strong>iPhoneとApple Watch</strong>は、WatchConnectivity（Appleのフレームワーク）を介して、高度付きの測定値とWatchの診断データを同期します。</li>
+      <li data-quelle="cd4e6c681208"><strong>iPhoneとiPad</strong>は、MultipeerConnectivity（Appleのフレームワーク）を介して、ローカルネットワークまたはBluetoothで測定値を同期します。接続は暗号化されており、六桁のペアリングコードが必要です。そのためにシステムが「ローカルネットワーク」の許可を求めます。その際、各デバイスにはiOSがアプリに伝えるデバイス名が見えます（特別な権限がない場合は「iPhone」や「iPad」などの一般的な名称のみ）。</li>
+    </ul>
+    <p data-quelle="e8f40cd065e2">サーバーは関与せず、データはお客様ご自身のデバイス間で直接やり取りされます。</p>
+    <p data-quelle="f10868003f55"><strong>目的：</strong>お客様のすべてのデバイスで同じ測定値を表示すること。設定はデバイスごとに適用され、同期されません。Watchの診断データはこの方法でiPhoneの診断データに取り込まれます（第3.7節）。</p>
+    <p data-quelle="a9e3097b48c4"><strong>法的根拠：</strong>TDDDG第25条第2項第2号、GDPR第6条第1項(b)。アプリは、お客様による「ローカルネットワーク」の許可とペアリングコードがある場合にのみiPhoneとiPadの間の同期を利用します（第6節参照）。</p>
+
+    <h3 data-quelle="6056798704bb">3.6 設定と診断ログ</h3>
+    <p data-quelle="cdeb969815a9">アプリは設定（例：測定間隔、記録保存される期間、高度モード、手動で入力した高度、アラームのしきい値）をデバイス上に記録保存します。技術的な診断ログは、バックグラウンド処理が何を判断したか（センサー、高度の決定、同期、バックグラウンド更新、アラーム）を座標なしで記録します。診断ログの上限は512 KBで、古い項目から削除されます。</p>
+    <p data-quelle="132de4356d84"><strong>目的：</strong>お客様の設定を適用すること。お客様が診断データを送信した場合に、バックグラウンド処理が何を判断したかを診断ログによって追跡できるようにすること（第3.7節）。</p>
+    <p data-quelle="725b0de52cfd"><strong>法的根拠：</strong>TDDDG第25条第2項第2号、GDPR第6条第1項(b)（第6節参照）。</p>
+
+    <h3 data-quelle="2e8aa66effc4">3.7 データエクスポートと診断データ（お客様のご依頼による場合のみ）</h3>
+    <ul>
+      <li data-quelle="2482443ad25e">設定の<strong>データエクスポート（JSON）</strong>は、記録保存された測定値（気圧、時刻、取得元、高度）を含むファイルを作成します。</li>
+      <li data-quelle="5edff8067d7a"><strong>診断データを送信</strong>は、デバイスモデルの識別子、OSのバージョン、アプリのバージョン、許可の状態、設定、センサーと高度の状態、ストレージと同期の状態、iPhoneとWatchの診断ログおよび最新の測定値を含むファイルを作成します。<strong>含まれないもの：</strong>座標とペアリングコード。</li>
+    </ul>
+    <p data-quelle="0340d0186391">どちらのファイルもシステムの共有シートを開きます。そこで送信先と送信方法をお客様ご自身が選択します。自動送信はありません。</p>
+    <p data-quelle="3d1b9f41dfd5"><strong>目的：</strong>データエクスポートは、お客様の測定値をアプリの外で利用するためのものです。診断データは、不具合を追跡して修正するためのものです。お客様から当方に送信された場合、当方はこれをお客様のお問い合わせへの対応にのみ使用します（第3.8節）。</p>
+    <p data-quelle="537682412b7a"><strong>法的根拠：</strong>お客様のご依頼によるデバイス上での作成についてはTDDDG第25条第2項第2号、当方での対応についてはGDPR第6条第1項(b)、予備的に同項(f)（第6節参照）。</p>
+
+    <h3 data-quelle="5d854f622509">3.8 サポートメール</h3>
+    <p data-quelle="1870bc044710">お客様が当方に（アプリのヘルプから、または直接）メールを送信した場合、当方はお問い合わせに回答するために、お客様のメールアドレス、お名前（記載がある場合）、内容および添付された診断データ（ある場合）を取り扱います。メールボックスは、ドイツ・モンタバウアーの1&amp;1 Mail &amp; Media GmbHのサービスであるメールサービスGMXで管理されています。</p>
+    <p data-quelle="920b56a276b7"><strong>目的：</strong>お客様のお問い合わせに回答すること。</p>
+    <p data-quelle="f00e8353cbde"><strong>法的根拠：</strong>GDPR第6条第1項(b)、予備的に同項(f)（第6節参照）。</p>
+
+    <h2 data-quelle="39e33dac7d51">4. Appleのプラットフォームサービス</h2>
+    <p data-quelle="4309817f8c5e">以下の取扱いは、Appleが独立した管理者として行うものであり、当方はこれに影響を及ぼすことができません。Appleのプライバシーポリシーが適用されます：<a href="https://www.apple.com/jp/legal/privacy/">apple.com/jp/legal/privacy</a>。当方がその際に個人データを受け取るのは、クラッシュおよびパフォーマンスのデータ（第4.2節）の場合のみです。目的と法的根拠はそこに記載しています。</p>
+
+    <h3 data-quelle="c4424d160bca">4.1 App Store</h3>
+    <p data-quelle="5206346ead63">BaroWatchはApp Storeを通じて配布されています。購入、ダウンロードおよびアップデートはAppleが処理します。当方がAppleから受け取るのは、個人を特定できない集計統計のみです。</p>
+
+    <h3 data-quelle="6d99b4dc224f">4.2 Appleを介したクラッシュおよびパフォーマンスのデータ</h3>
+    <p data-quelle="dffda5692f0e">システムの設定の<em>プライバシーとセキュリティ → 解析および改善</em>で「アプリデベロッパと共有」をオンにしている場合、Appleは当方にアプリのクラッシュレポートと集計されたパフォーマンスデータを提供します。この同意がなければ、当方は何も受け取りません。同意はそこでいつでも撤回できます。</p>
+    <p data-quelle="c2c7ffa6e15d"><strong>目的：</strong>アプリのクラッシュとパフォーマンスの問題を検出して修正すること。</p>
+    <p data-quelle="980d63afb43a"><strong>法的根拠：</strong>お客様がAppleに対して与えた同意、GDPR第6条第1項(a)（第6節参照）。</p>
+
+    <h3 data-quelle="6424d1b6b64c">4.3 デバイスのバックアップ</h3>
+    <p data-quelle="858d72d88fc6">お客様のデバイスでiCloudバックアップまたはコンピュータへのバックアップがオンになっている場合、デバイス上に記録保存されたアプリのデータは、他のアプリのデータと同様に、このデバイスのバックアップに含まれます。このバックアップは、BaroWatchではなく、お客様の設定に従ってオペレーティングシステムが行います。</p>
+
+    <h2 id="ja-website" data-quelle="c88b4dc2296d">5. 本ウェブサイト</h2>
+    <p data-quelle="2f1c07984e49">本ウェブサイトはGitHub Pages（GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA）を通じて提供されています。ページを開くと、GitHubはお客様のIPアドレスを含む技術的に必要な接続データを取り扱います。GitHubによれば、GitHubにサインインしていなくても、すべての訪問者のIPアドレスがセキュリティ上の理由から記録され、記録保存されます。GitHubはこれらのデータを自らのプライバシーステートメントに従って独立した管理者として取り扱い、これらのログについて一定の記録保存される期間を示していません。当方はこれに影響を及ぼすことができません。</p>
+    <p data-quelle="9c5a5f19587c">アプリの<em>ヘルプ</em>にあるリンクは、本ウェブサイトをブラウザで開きます。その場合には本節が適用されます。</p>
+    <p data-quelle="74702bb3ef00">本ウェブサイトはCookieを設定せず、トラッキングを含まず、第三者のフォント、スクリプトその他のコンテンツを読み込みません。</p>
+    <p data-quelle="1b3377529922">法的根拠はGDPR第6条第1項(f)です。当方の正当な利益は、アプリに関する必須の情報を安全、無料かつ確実に提供することにあります。GitHubはEU-US Data Privacy Framework（EU-U.S. Data Privacy Framework）の認証を受けています（欧州委員会による十分性認定、GDPR第45条）。GitHubのプライバシーステートメント：<a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>。</p>
+
+    <h2 data-quelle="6baa0ef44eb8">6. 法的根拠</h2>
+    <ul>
+      <li data-quelle="09871b966295"><strong>お客様のデバイス上での取扱いとデバイス間の同期</strong>（第3.1節～第3.6節、および第3.7節のデータエクスポートと診断データの作成）：データは当方に届きません。アプリがデバイス上でデータを記録保存し、これにアクセスするのは、お客様が明示的に利用する機能にとってそれが厳密に必要なためです（TDDDG第25条第2項第2号）。個人データが取り扱われる限りにおいて、それはアプリの利用に必要です（GDPR第6条第1項(b)）。アプリは、センサーとモーションのデータ（第3.1節、第3.3節）、位置情報（第3.2節）、通知（第3.4節）およびローカルネットワーク（第3.5節）を、システムにおけるお客様の許可がある場合にのみ利用します。</li>
+      <li data-quelle="1ded8902f7e9"><strong>当方における診断データとサポートメール</strong>（第3.7節、第3.8節）：GDPR第6条第1項(b)（アプリに関するお客様のお問い合わせへの対応）、予備的に同項(f)（お問い合わせに回答し、不具合を修正するという正当な利益）。</li>
+      <li data-quelle="69cfaadb579d"><strong>Appleを介したクラッシュおよびパフォーマンスのデータ</strong>（第4.2節）：お客様がAppleに対して与えた同意、GDPR第6条第1項(a)。</li>
+      <li data-quelle="de7ac1dbc826"><strong>ウェブサイト</strong>（第5節）：GDPR第6条第1項(f)。</li>
+    </ul>
+
+    <h2 data-quelle="71336fe0c94e">7. 取得者と第三国への個人データの移転</h2>
+    <p data-quelle="7ccd40cfbab3">当方は、データを第三者に渡すことも販売することもありません。取得者は以下に限られます：</p>
+    <ul>
+      <li data-quelle="2e0d3d6f4400">お客様ご自身のペアリング済みデバイス（第3.5節）</li>
+      <li data-quelle="b538d4e23971">データエクスポートまたは診断データを共有する際にお客様ご自身が選択する取得者</li>
+      <li data-quelle="43be2426c109">サポートメールのための当方のメールサービスGMX（1&amp;1 Mail &amp; Media GmbH、ドイツ）</li>
+      <li data-quelle="95f233b70126">本ウェブサイトを開く際のGitHub, Inc.（米国）（第5節）</li>
+      <li data-quelle="120789ab8fa1">第4節に記載のサービスについて独立した管理者であるApple</li>
+    </ul>
+    <p data-quelle="6b13104dd7f0">第三国への移転は、本ウェブサイトを開く場合（GitHub、米国、EU-US Data Privacy Framework）およびAppleのサービスの範囲内でのみ行われます。</p>
+
+    <h2 data-quelle="2c05e8176f8d">8. 記録保存される期間と消去</h2>
+    <ul>
+      <li data-quelle="15aa6d9e1108"><strong>測定値：</strong><em>保存</em>で設定した期間（初期設定は24時間、最長365日）。設定の<em>データ削除</em>で直ちに削除されます。</li>
+      <li data-quelle="c5f4a9d03fea"><strong>高度：</strong>その時点で最後に求めた高度。新しい高度に置き換えられるまで。</li>
+      <li data-quelle="131db78c4d5e"><strong>モーションアクティビティと歩数：</strong>記録保存されません。</li>
+      <li data-quelle="9b63d2205305"><strong>診断ログ：</strong>循環式、最大512 KB。</li>
+      <li data-quelle="390f9c5703dc"><strong>設定：</strong>お客様が変更するか、アプリを削除するまで。アプリを削除すると、システムがアプリのすべてのデータをデバイスから削除します。</li>
+      <li data-quelle="226326fcc95a"><strong>共有用のエクスポートファイルと診断ファイル：</strong>アプリの一時ディレクトリにあり、システムが自動的に消去します。お客様が渡したものは、お客様が選択した取得者のもとにあります。</li>
+      <li data-quelle="ba0cfc44e5e3"><strong>当方におけるサポートメールと診断データ：</strong>お問い合わせが完了するまで。その後、遅くとも12か月後に消去されます。</li>
+      <li data-quelle="9457c80023d9"><strong>ウェブサイトのログ：</strong>GitHubの定めに従います（第5節）。</li>
+    </ul>
+
+    <h2 data-quelle="09679532c7d2">9. 個人データの提供の義務</h2>
+    <p data-quelle="ee422f895cec">お客様には、法律上も契約上もデータを提供する義務はありません。「モーションとフィットネス」の許可がなければ、アプリは気圧を測定できません。位置情報の許可がなければ、補正されていない現地気圧（QFE）のみを表示します。「ローカルネットワーク」の許可がなければ、iPhoneとiPadの間の同期はできません。通知の許可がなければ、気圧アラームはありません。</p>
+
+    <h2 data-quelle="549b934a0e67">10. 自動化された意思決定の不実施</h2>
+    <p data-quelle="5b572a45b096">GDPR第22条の意味におけるプロファイリングを含む個人に対する自動化された意思決定は行いません。</p>
+
+    <h2 data-quelle="7ab560f9e773">11. お客様の権利</h2>
+    <p data-quelle="54869cd1169f">当方がお客様の個人データを取り扱う限りにおいて（通常はサポートのお問い合わせの場合のみ）、お客様には以下の権利があります：</p>
+    <ul>
+      <li data-quelle="92d48404fe6b">アクセスの権利（GDPR第15条）</li>
+      <li data-quelle="abc00f95afcc">訂正の権利（GDPR第16条）</li>
+      <li data-quelle="3541a26f70f7">消去の権利（GDPR第17条）</li>
+      <li data-quelle="8b54f4ccbed0">取扱いの制限の権利（GDPR第18条）</li>
+      <li data-quelle="8110df6ba004">データポータビリティの権利（GDPR第20条）</li>
+      <li data-quelle="0f611bbf0b26">GDPR第6条第1項(f)に基づく取扱いに対して異議を述べる権利（GDPR第21条）</li>
+    </ul>
+    <p data-quelle="52e56f0e498c"><strong>同意の撤回</strong>（GDPR第7条第3項）：同意は、将来に向かっていつでも撤回できます。対象は、システムの設定における位置情報、モーションとフィットネス、ローカルネットワークおよび通知の許可、ならびに<em>解析および改善</em>における解析データの共有です。撤回前に行われた取扱いの適法性は影響を受けません。</p>
+    <p data-quelle="9bfb0dea98a4">お客様のデバイス上のデータは、お客様ご自身が管理します。アプリ内でエクスポートおよび削除できます。当方はこれらのデータを保有していないため、これらについて情報を提供することも、お客様に代わって削除することもできません。</p>
+    <p data-quelle="6ecfc6a525cb">お問い合わせには、<a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a>へのメールで足ります。</p>
+
+    <h2 data-quelle="2419cdcdc704">12. 苦情の申立ての権利</h2>
+    <p data-quelle="8159cd6141c5">お客様には、データ保護監督機関に苦情を申し立てる権利があります（GDPR第77条）。特に、お客様の常居所のある加盟国において申し立てることができます。当方を管轄する監督機関は次のとおりです：</p>
+    <p data-quelle="629f27f9614f">Sächsische Datenschutz- und Transparenzbeauftragte<br> Maternistraße 17, 01067 Dresden<br> 郵送先：Postfach 11 01 32, 01330 Dresden<br> メール：<a href="mailto:post@sdtb.sachsen.de">post@sdtb.sachsen.de</a><br> <a href="https://www.datenschutz.sachsen.de/">www.datenschutz.sachsen.de</a></p>
+
+    <h2 data-quelle="eaa1aebfd86b">13. 子ども</h2>
+    <p data-quelle="5f39ac6a7085">BaroWatchは子どもを対象としておらず、年齢に関する情報を収集しません。</p>
+
+    <h2 data-quelle="34538baeda2c">14. 変更</h2>
+    <p data-quelle="c700f3601a28">当方は、アプリの機能または法的要件が変わった場合に、本プライバシーポリシーを改定します。最新版はこのアドレスで公開しており、アプリからもリンクしています。</p>
+    <p data-quelle="d760f081e71a">第2.2版、<time class="stand" datetime="2026-10-27">2026年10月27日</time>現在（<time datetime="2026-10-26">2026年10月26日</time>付の第2.1版および第2.0版、ならびに<time datetime="2026-05">2026年5月</time>付の版に代わるもの）。</p>
+  </section>
+
+  <footer>
+    <a href="index-ja.html" data-quelle="e04d24c52b3d">ホーム</a>
+    <a href="support-ja.html" data-quelle="be91940b79f4">サポート</a>
+    <a href="impressum-en.html" data-quelle="b8a6051923e6">運営者情報</a> <span lang="en">(English)</span>
+  </footer>
+</main>
+</body>
+</html>
