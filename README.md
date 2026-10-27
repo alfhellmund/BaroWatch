@@ -34,6 +34,7 @@ Ablauf bei einer neuen Fassung einer deutschen Quelle (Werkzeug `Tools/website_l
 Regeln:
 
 - Die Dateinamen `index-<code>.html`, `support-<code>.html` und `privacy-<code>.html` werden nicht umbenannt (App Store Connect: Privacy Policy URL und Support URL sind nicht editierbar). `<code>` ist die Sprachkennung der App in Kleinbuchstaben (`pt-br`, `zh-hans`). Dasselbe gilt für `index.html`, `support.html`, `privacy.html`, `impressum.html` und `impressum-en.html`.
+- Eine neue App-Sprache braucht zuerst ihre veröffentlichten `privacy-`, `support-` und `index-<code>.html`; die App verweist auf jede Bündel-Lokalisierung (`BaroWatch/docs/design/datenschutz-link-in-der-app.md`, D4).
 - Die Sprachauswahlen (`index.html`, `support.html`, `privacy.html`) entstehen nur über `python3 Tools/website_l10n.py bauen <Pfad zu diesem Ordner> --nur-auswahl`.
 - Das Impressum gibt es deutsch (`impressum.html`, maßgeblich) und englisch (`impressum-en.html`); die Fußzeilen der übrigen Sprachen verweisen auf die englische Fassung mit dem Zusatz „(English)“.
 
