@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Synkronointi laitteidenne välillä</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone ja Apple Watch</strong> synkronoivat WatchConnectivityn (Applen kehys) kautta mittausarvot korkeuksineen sekä Watchin diagnostiikkatiedot.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone ja iPad</strong> synkronoivat mittausarvot MultipeerConnectivityn (Applen kehys) kautta lähiverkossa tai Bluetoothin välityksellä. Yhteys on salattu, ja se edellyttää kuusinumeroista parituskoodia. Tätä varten järjestelmä pyytää lupaa ”Lähiverkko”. Laitteet näkevät tällöin laitenimen, jonka iOS antaa apille (ilman erityistä käyttöoikeutta vain yleisnimen, kuten ”iPhone” tai ”iPad”).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone ja iPad</strong> synkronoivat mittausarvot MultipeerConnectivityn (Applen kehys) kautta lähiverkossa tai Bluetoothin välityksellä. Yhteys on salattu, ja se edellyttää kuusinumeroista synkronointikoodia. Tätä varten järjestelmä pyytää lupaa ”Lähiverkko”. Laitteet näkevät tällöin laitenimen, jonka iOS antaa apille (ilman erityistä käyttöoikeutta vain yleisnimen, kuten ”iPhone” tai ”iPad”).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Palvelinta ei käytetä; tiedot kulkevat suoraan omien laitteidenne välillä.</p>
     <p data-quelle="f10868003f55"><strong>Käsittelyn tarkoitus:</strong> samojen mittausarvojen näyttäminen kaikissa laitteissanne; asetukset ovat laitekohtaisia eikä niitä synkronoida; tätä kautta Watchin diagnostiikkatiedot päätyvät myös iPhonen diagnostiikkatietoihin (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Käsittelyn oikeusperuste:</strong> TDDDG:n 25 §:n 2 momentin 2 kohta, tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta; iPhonen ja iPadin välistä synkronointia appi käyttää vain antamallanne luvalla ”Lähiverkko” ja parituskoodilla (ks. kohta 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Käsittelyn oikeusperuste:</strong> TDDDG:n 25 §:n 2 momentin 2 kohta, tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta; iPhonen ja iPadin välistä synkronointia appi käyttää vain antamallanne luvalla ”Lähiverkko” ja synkronointikoodilla (ks. kohta 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Asetukset ja diagnostiikkaloki</h3>
     <p data-quelle="cdeb969815a9">Appi tallentaa asetukset (esim. mittausväli, säilytysaika, korkeustila, käsin syötetty korkeus, hälytysraja) laitteelle. Tekninen diagnostiikkaloki kirjaa, mitä taustaprosessit ovat päättäneet (anturi, korkeuden määritys, synkronointi, taustapäivitys, hälytys) — ilman koordinaatteja. Sen koko on rajattu 512 kt:hen; vanhimmat merkinnät poistuvat.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Tietojen vienti ja diagnostiikkatiedot (vain pyynnöstänne)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Tietojen vienti (JSON)</strong> asetuksissa luo tiedoston, joka sisältää tallennetut mittausarvot (paine, aika, lähde, korkeus).</li>
-      <li data-quelle="5edff8067d7a"><strong>Lähetä diagnostiikkatiedot</strong> luo tiedoston, joka sisältää laitemallin tunnisteen, käyttöjärjestelmän version, apin version, lupien tilan, asetukset, anturin ja korkeuden tilan, tallennuksen ja synkronoinnin tilan, iPhonen ja Watchin diagnostiikkalokin sekä viimeisimmät mittausarvot. <strong>Ei koskaan mukana:</strong> koordinaatit ja parituskoodi.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Lähetä diagnostiikkatiedot</strong> luo tiedoston, joka sisältää laitemallin tunnisteen, käyttöjärjestelmän version, apin version, lupien tilan, asetukset, anturin ja korkeuden tilan, tallennuksen ja synkronoinnin tilan, iPhonen ja Watchin diagnostiikkalokin sekä viimeisimmät mittausarvot. <strong>Ei koskaan mukana:</strong> koordinaatit ja synkronointikoodi.</li>
     </ul>
     <p data-quelle="0340d0186391">Molemmat tiedostot avaavat järjestelmän jakovalikon; siinä valitsette itse vastaanottajan ja lähetystavan. Automaattista lähettämistä ei ole.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Käsittelyn tarkoitus:</strong> Tietojen viennin avulla voitte käyttää mittausarvojanne apin ulkopuolella; diagnostiikkatietojen avulla virhe voidaan jäljittää ja korjata. Jos lähetätte ne meille, käytämme niitä yksinomaan yhteydenottonne käsittelyyn (3.8).</p>
