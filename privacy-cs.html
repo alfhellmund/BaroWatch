@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Synchronizace mezi vašimi zařízeními</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone a Apple Watch</strong> synchronizují přes WatchConnectivity (framework Apple) naměřené hodnoty s výškou a diagnostická data hodinek.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone a iPad</strong> synchronizují naměřené hodnoty přes MultipeerConnectivity (framework Apple) v místní síti, případně přes Bluetooth. Spojení je šifrované a vyžaduje šestimístný párovací kód. K tomu systém žádá o povolení „Místní síť“. Zařízení přitom vidí název zařízení, který iOS aplikaci sdělí (bez zvláštního oprávnění pouze obecný název jako „iPhone“ nebo „iPad“).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone a iPad</strong> synchronizují naměřené hodnoty přes MultipeerConnectivity (framework Apple) v místní síti, případně přes Bluetooth. Spojení je šifrované a vyžaduje šestimístný synchronizační kód. K tomu systém žádá o povolení „Místní síť“. Zařízení přitom vidí název zařízení, který iOS aplikaci sdělí (bez zvláštního oprávnění pouze obecný název jako „iPhone“ nebo „iPad“).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Nepodílí se na tom žádný server; údaje putují přímo mezi vašimi vlastními zařízeními.</p>
     <p data-quelle="f10868003f55"><strong>Účel:</strong> zobrazovat stejné naměřené hodnoty na všech vašich zařízeních; nastavení platí pro každé zařízení zvlášť a nesynchronizují se; diagnostická data hodinek se tak dostávají do diagnostických dat iPhonu (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Právní základ:</strong> § 25 odst. 2 bod 2 TDDDG, čl. 6 odst. 1 písm. b) GDPR; synchronizaci mezi iPhonem a iPadem aplikace používá pouze s vaším povolením „Místní síť“ a s párovacím kódem (viz oddíl 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Právní základ:</strong> § 25 odst. 2 bod 2 TDDDG, čl. 6 odst. 1 písm. b) GDPR; synchronizaci mezi iPhonem a iPadem aplikace používá pouze s vaším povolením „Místní síť“ a se synchronizačním kódem (viz oddíl 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Nastavení a diagnostický protokol</h3>
     <p data-quelle="cdeb969815a9">Nastavení (např. interval měření, dobu uložení, režim výšky, ručně zadanou výšku, práh alarmu) ukládá aplikace v zařízení. Technický diagnostický protokol zaznamenává, jak rozhodly procesy na pozadí (senzor, určení výšky, synchronizace, aktualizace na pozadí, alarm) — bez souřadnic. Je omezen na 512 KB; starší záznamy z něj vypadávají.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Export dat a diagnostická data (pouze na váš podnět)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Export dat (JSON)</strong> v nastavení vytvoří soubor s uloženými naměřenými hodnotami (tlak, čas, zdroj, výška).</li>
-      <li data-quelle="5edff8067d7a"><strong>Odeslat diagnostická data</strong> vytvoří soubor s identifikátorem modelu zařízení, verzí operačního systému, verzí aplikace, stavem povolení, nastavením, stavem senzoru a výšky, stavem úložiště a synchronizace, diagnostickým protokolem iPhonu a hodinek a posledními naměřenými hodnotami. <strong>Nikdy neobsahuje:</strong> souřadnice a párovací kód.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Odeslat diagnostická data</strong> vytvoří soubor s identifikátorem modelu zařízení, verzí operačního systému, verzí aplikace, stavem povolení, nastavením, stavem senzoru a výšky, stavem úložiště a synchronizace, diagnostickým protokolem iPhonu a hodinek a posledními naměřenými hodnotami. <strong>Nikdy neobsahuje:</strong> souřadnice a synchronizační kód.</li>
     </ul>
     <p data-quelle="0340d0186391">Oba soubory otevírají systémové okno sdílení; tam sami zvolíte příjemce a způsob. Neexistuje žádné automatické odesílání.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Účel:</strong> Export dat slouží k dalšímu využití vašich naměřených hodnot mimo aplikaci; diagnostická data slouží k dohledání a odstranění chyby. Pokud nám je pošlete, použijeme je výhradně k vyřízení vašeho dotazu (3.8).</p>
