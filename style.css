@@ -4,6 +4,8 @@
   --bg: #ffffff;
   --accent: #007aff;
   --border: #d2d2d7;
+  --mark-bg: #fff4c2;
+  --mark-fg: #5c4400;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +15,8 @@
     --bg: #000000;
     --accent: #0a84ff;
     --border: #424245;
+    --mark-bg: #3d3200;
+    --mark-fg: #ffe89a;
   }
 }
 
@@ -135,18 +139,11 @@ hr.section {
 }
 
 /* Entwurfsmarker: offene Prüfpunkte für den Projektinhaber.
-   Vor der Veröffentlichung müssen alle .pruefen-Elemente entfernt sein. */
+   Vor jedem Push muss die Marker-Suche leer sein (README.md der Website). */
 .pruefen {
-  background: #fff4c2;
-  color: #5c4400;
+  background: var(--mark-bg);
+  color: var(--mark-fg);
   font-size: 14px;
   padding: 1px 6px;
   border-radius: 4px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .pruefen {
-    background: #3d3200;
-    color: #ffe89a;
-  }
 }

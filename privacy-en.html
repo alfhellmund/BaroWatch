@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Sync between your devices</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone and Apple Watch</strong> exchange readings with altitude and the Watch's diagnostics data via WatchConnectivity (Apple framework).</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone and iPad</strong> exchange readings via MultipeerConnectivity (Apple framework) over the local network or Bluetooth. The connection is encrypted and requires a six-digit pairing code. The system asks for “Local Network” access for this. The devices see the device name iOS provides to the app (without special entitlement only the generic name such as “iPhone” or “iPad”).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone and iPad</strong> exchange readings via MultipeerConnectivity (Apple framework) over the local network or Bluetooth. The connection is encrypted and requires a six-digit sync code. The system asks for “Local Network” access for this. The devices see the device name iOS provides to the app (without special entitlement only the generic name such as “iPhone” or “iPad”).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">No server is involved; data goes directly between your own devices.</p>
     <p data-quelle="f10868003f55"><strong>Purpose:</strong> to show the same readings on all your devices; settings apply per device and are not synchronised; this is also how the Watch's diagnostics data reaches the iPhone's diagnostics data (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app uses the iPhone–iPad sync only with your “Local Network” permission and the pairing code (see section 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app uses the iPhone–iPad sync only with your “Local Network” permission and the sync code (see section 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Settings and diagnostics log</h3>
     <p data-quelle="cdeb969815a9">The app stores settings (e.g. sampling interval, retention, altitude mode, a manually entered altitude, alarm threshold) on the device. A technical diagnostics log records what the background processes decided (sensor, altitude determination, sync, background refresh, alarm) — without coordinates. It is limited to 512 KB; older entries drop out.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Data export and diagnostics data (only at your request)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Data export (JSON)</strong> in Settings creates a file with the stored readings (pressure, time, source, altitude).</li>
-      <li data-quelle="5edff8067d7a"><strong>Send diagnostics</strong> creates a file with device model identifier, operating system version, app version, permission states, settings, sensor and altitude state, storage and sync status, the diagnostics log of iPhone and Watch, and the latest readings. <strong>Never included:</strong> coordinates and the pairing code.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Send diagnostics</strong> creates a file with device model identifier, operating system version, app version, permission states, settings, sensor and altitude state, storage and sync status, the diagnostics log of iPhone and Watch, and the latest readings. <strong>Never included:</strong> coordinates and the sync code.</li>
     </ul>
     <p data-quelle="0340d0186391">Both open the system share sheet; there you choose recipient and channel yourself. There is no automatic sending.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Purpose:</strong> The data export lets you use your readings outside the app; the diagnostics data serves to trace and fix an error. If you send it to us, we use it exclusively to handle your request (3.8).</p>

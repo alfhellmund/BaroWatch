@@ -15,11 +15,13 @@ Jeder Seitentyp hat eine deutsche Quelle (von Hand gepflegt), Sprachfassungen (e
 | Datenschutzerklärung | `privacy-de.html` | `privacy-<code>.html`, beginnend mit `privacy-en.html` | `privacy.html` |
 | Impressum | `impressum.html` (maßgeblich) | `impressum-en.html` (Übersetzung) | keine |
 
-- `style.css` — Gestaltung, dazu die Klasse `.pruefen` für Entwurfsmarker
+- `style.css` — Gestaltung, dazu die Klasse `.pruefen` für Entwurfsmarker; erzeugt aus `Tools/website_style.css` im Repository der Starpath-App (nicht von Hand ändern)
 
-## Änderungen an der Datenschutzerklärung
+## Änderungen an den Seiten
 
-Ändert die App Berechtigungen, Speicherung oder Datenwege, wird `privacy-de.html` gegen den Code nachgezogen und Fassung und Stand im Kopf
+**Gestaltung:** Die eine Quelle von `style.css` ist `Tools/website_style.css` im Repository der Starpath-App, gemeinsam mit der Website von Starpath. Geändert wird nur die Quelle; jedes `bauen` (auch `--nur-auswahl`) schreibt `style.css` daraus, und `pruefen` meldet jede Abweichung (Prüfpunkt r).
+
+**Datenschutzerklärung:** Ändert die App Berechtigungen, Speicherung oder Datenwege, wird `privacy-de.html` gegen den Code nachgezogen und Fassung und Stand im Kopf
 der Seite und in der Fassungszeile erhöht.
 
 Ablauf bei einer neuen Fassung einer deutschen Quelle (Werkzeug `Tools/website_l10n.py` im Repository der Starpath-App):

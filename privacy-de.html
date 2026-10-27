@@ -69,11 +69,11 @@
     <h3>3.5 Abgleich zwischen Ihren Geräten</h3>
     <ul>
       <li><strong>iPhone und Apple Watch</strong> gleichen über WatchConnectivity (Apple-Framework) Messwerte mit Höhe und die Diagnosedaten der Watch ab.</li>
-      <li><strong>iPhone und iPad</strong> gleichen über MultipeerConnectivity (Apple-Framework) im lokalen Netzwerk bzw. über Bluetooth Messwerte ab. Die Verbindung ist verschlüsselt und setzt einen sechsstelligen Kopplungscode voraus. Dafür fragt das System nach der Freigabe „Lokales Netzwerk“. Die Geräte sehen dabei die Gerätebezeichnung, die iOS der App mitteilt (ohne besondere Berechtigung nur die allgemeine Bezeichnung wie „iPhone“ oder „iPad“).</li>
+      <li><strong>iPhone und iPad</strong> gleichen über MultipeerConnectivity (Apple-Framework) im lokalen Netzwerk bzw. über Bluetooth Messwerte ab. Die Verbindung ist verschlüsselt und setzt einen sechsstelligen Sync-Code voraus. Dafür fragt das System nach der Freigabe „Lokales Netzwerk“. Die Geräte sehen dabei die Gerätebezeichnung, die iOS der App mitteilt (ohne besondere Berechtigung nur die allgemeine Bezeichnung wie „iPhone“ oder „iPad“).</li>
     </ul>
     <p>Kein Server ist beteiligt; die Daten gehen direkt zwischen Ihren eigenen Geräten.</p>
     <p><strong>Zweck:</strong> dieselben Messwerte auf allen Ihren Geräten anzeigen; Einstellungen gelten je Gerät und werden nicht abgeglichen; die Diagnosedaten der Watch gelangen so in die Diagnosedaten des iPhones (3.7).</p>
-    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; den Abgleich zwischen iPhone und iPad nutzt die App nur mit Ihrer Freigabe „Lokales Netzwerk“ und dem Kopplungscode (siehe Abschnitt 6).</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; den Abgleich zwischen iPhone und iPad nutzt die App nur mit Ihrer Freigabe „Lokales Netzwerk“ und dem Sync-Code (siehe Abschnitt 6).</p>
 
     <h3>3.6 Einstellungen und Diagnoseprotokoll</h3>
     <p>Einstellungen (z. B. Messintervall, Speicherdauer, Höhenmodus, eine von Hand eingegebene Höhe, Alarmschwelle) speichert die App auf dem Gerät. Ein technisches Diagnoseprotokoll hält fest, was die Hintergrundprozesse entschieden haben (Sensor, Höhenbestimmung, Abgleich, Hintergrundaktualisierung, Alarm) — ohne Koordinaten. Es ist auf 512 KB begrenzt; ältere Einträge fallen heraus.</p>
@@ -83,7 +83,7 @@
     <h3>3.7 Datenexport und Diagnosedaten (nur auf Ihre Veranlassung)</h3>
     <ul>
       <li><strong>Datenexport (JSON)</strong> in den Einstellungen erzeugt eine Datei mit den gespeicherten Messwerten (Druck, Zeit, Quelle, Höhe).</li>
-      <li><strong>Diagnosedaten senden</strong> erzeugt eine Datei mit Gerätemodell-Kennung, Betriebssystemversion, App-Version, Stand der Freigaben, Einstellungen, Sensor- und Höhenzustand, Speicher- und Abgleichstatus, dem Diagnoseprotokoll von iPhone und Watch und den letzten Messwerten. <strong>Nie enthalten:</strong> Koordinaten und der Kopplungscode.</li>
+      <li><strong>Diagnosedaten senden</strong> erzeugt eine Datei mit Gerätemodell-Kennung, Betriebssystemversion, App-Version, Stand der Freigaben, Einstellungen, Sensor- und Höhenzustand, Speicher- und Abgleichstatus, dem Diagnoseprotokoll von iPhone und Watch und den letzten Messwerten. <strong>Nie enthalten:</strong> Koordinaten und der Sync-Code.</li>
     </ul>
     <p>Beide Dateien öffnen das Teilen-Fenster des Systems; dort wählen Sie selbst Empfänger und Weg. Es gibt keinen automatischen Versand.</p>
     <p><strong>Zweck:</strong> Der Datenexport dient dazu, Ihre Messwerte außerhalb der App weiterzuverwenden; die Diagnosedaten dienen dazu, einen Fehler nachzuvollziehen und zu beheben. Schicken Sie sie uns, verwenden wir sie ausschließlich zur Bearbeitung Ihrer Anfrage (3.8).</p>
