@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Synchronisatie tussen uw apparaten</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone en Apple Watch</strong> synchroniseren via WatchConnectivity (Apple-framework) meetwaarden met hoogte en de diagnosegegevens van de Watch.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone en iPad</strong> synchroniseren via MultipeerConnectivity (Apple-framework) meetwaarden in het lokale netwerk of via Bluetooth. De verbinding is versleuteld en vereist een zescijferige koppelcode. Daarvoor vraagt het systeem om de toestemming “Lokaal netwerk”. De apparaten zien daarbij de apparaatnaam die iOS aan de app doorgeeft (zonder bijzondere machtiging alleen de algemene naam zoals “iPhone” of “iPad”).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone en iPad</strong> synchroniseren via MultipeerConnectivity (Apple-framework) meetwaarden in het lokale netwerk of via Bluetooth. De verbinding is versleuteld en vereist een zescijferige synccode. Daarvoor vraagt het systeem om de toestemming “Lokaal netwerk”. De apparaten zien daarbij de apparaatnaam die iOS aan de app doorgeeft (zonder bijzondere machtiging alleen de algemene naam zoals “iPhone” of “iPad”).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Er is geen server bij betrokken; de gegevens gaan rechtstreeks tussen uw eigen apparaten.</p>
     <p data-quelle="f10868003f55"><strong>Doel:</strong> dezelfde meetwaarden op al uw apparaten weergeven; instellingen gelden per apparaat en worden niet gesynchroniseerd; de diagnosegegevens van de Watch komen zo in de diagnosegegevens van de iPhone terecht (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Rechtsgrond:</strong> § 25, lid 2, punt 2, TDDDG, artikel 6, lid 1, punt b), AVG; de synchronisatie tussen iPhone en iPad gebruikt de app alleen met uw toestemming “Lokaal netwerk” en de koppelcode (zie paragraaf 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Rechtsgrond:</strong> § 25, lid 2, punt 2, TDDDG, artikel 6, lid 1, punt b), AVG; de synchronisatie tussen iPhone en iPad gebruikt de app alleen met uw toestemming “Lokaal netwerk” en de synccode (zie paragraaf 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Instellingen en diagnoselogboek</h3>
     <p data-quelle="cdeb969815a9">Instellingen (bijv. meetinterval, bewaartermijn, hoogtemodus, een handmatig ingevoerde hoogte, alarmdrempel) slaat de app op het apparaat op. Een technisch diagnoselogboek legt vast wat de achtergrondprocessen hebben besloten (sensor, hoogtebepaling, synchronisatie, vernieuwen op de achtergrond, alarm) — zonder coördinaten. Het is beperkt tot 512 KB; oudere vermeldingen vallen weg.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Gegevensexport en diagnosegegevens (alleen op uw verzoek)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Gegevensexport (JSON)</strong> in de instellingen maakt een bestand aan met de opgeslagen meetwaarden (druk, tijd, bron, hoogte).</li>
-      <li data-quelle="5edff8067d7a"><strong>Diagnosegegevens versturen</strong> maakt een bestand aan met de identificatie van het apparaatmodel, de versie van het besturingssysteem, de appversie, de status van de toestemmingen, de instellingen, de sensor- en hoogtestatus, de opslag- en synchronisatiestatus, het diagnoselogboek van iPhone en Watch en de laatste meetwaarden. <strong>Nooit inbegrepen:</strong> coördinaten en de koppelcode.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Diagnosegegevens versturen</strong> maakt een bestand aan met de identificatie van het apparaatmodel, de versie van het besturingssysteem, de appversie, de status van de toestemmingen, de instellingen, de sensor- en hoogtestatus, de opslag- en synchronisatiestatus, het diagnoselogboek van iPhone en Watch en de laatste meetwaarden. <strong>Nooit inbegrepen:</strong> coördinaten en de synccode.</li>
     </ul>
     <p data-quelle="0340d0186391">Beide bestanden openen het deelvenster van het systeem; daar kiest u zelf ontvanger en weg. Er is geen automatische verzending.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Doel:</strong> de gegevensexport dient ervoor uw meetwaarden buiten de app verder te gebruiken; de diagnosegegevens dienen ervoor een fout te achterhalen en te verhelpen. Stuurt u ze ons, dan gebruiken wij ze uitsluitend voor de behandeling van uw verzoek (3.8).</p>
