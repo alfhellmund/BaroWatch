@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Sinkronisasi di antara perangkat Anda</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone dan Apple Watch</strong> menyinkronkan pengukuran beserta ketinggian dan data diagnostik Watch melalui WatchConnectivity (framework Apple).</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone dan iPad</strong> menyinkronkan pengukuran melalui MultipeerConnectivity (framework Apple) di jaringan lokal atau melalui Bluetooth. Koneksi dienkripsi dan memerlukan kode pemasangan enam digit. Untuk itu, sistem meminta izin “Jaringan Lokal”. Perangkat melihat nama perangkat yang diberitahukan iOS kepada aplikasi (tanpa hak khusus, hanya nama umum seperti “iPhone” atau “iPad”).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone dan iPad</strong> menyinkronkan pengukuran melalui MultipeerConnectivity (framework Apple) di jaringan lokal atau melalui Bluetooth. Koneksi dienkripsi dan memerlukan kode sinkronisasi enam digit. Untuk itu, sistem meminta izin “Jaringan Lokal”. Perangkat melihat nama perangkat yang diberitahukan iOS kepada aplikasi (tanpa hak khusus, hanya nama umum seperti “iPhone” atau “iPad”).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Tidak ada server yang terlibat; data dikirim langsung di antara perangkat Anda sendiri.</p>
     <p data-quelle="f10868003f55"><strong>Tujuan:</strong> menampilkan pengukuran yang sama di semua perangkat Anda; pengaturan berlaku per perangkat dan tidak disinkronkan; dengan cara ini pula data diagnostik Watch masuk ke data diagnostik iPhone (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Dasar pemrosesan:</strong> § 25 ayat (2) angka 2 TDDDG, Pasal 6 ayat (1) huruf b GDPR; aplikasi hanya menggunakan sinkronisasi antara iPhone dan iPad dengan izin “Jaringan Lokal” dari Anda dan kode pemasangan (lihat bagian 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Dasar pemrosesan:</strong> § 25 ayat (2) angka 2 TDDDG, Pasal 6 ayat (1) huruf b GDPR; aplikasi hanya menggunakan sinkronisasi antara iPhone dan iPad dengan izin “Jaringan Lokal” dari Anda dan kode sinkronisasi (lihat bagian 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Pengaturan dan log diagnostik</h3>
     <p data-quelle="cdeb969815a9">Aplikasi menyimpan pengaturan (mis. interval pengukuran, durasi penyimpanan, mode ketinggian, ketinggian yang dimasukkan secara manual, ambang alarm) di perangkat. Log diagnostik teknis mencatat apa yang diputuskan oleh proses latar belakang (sensor, penentuan ketinggian, sinkronisasi, penyegaran latar belakang, alarm) — tanpa koordinat. Log ini dibatasi hingga 512 KB; entri yang lebih lama akan terhapus.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Ekspor data dan data diagnostik (hanya atas tindakan Anda)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Ekspor data (JSON)</strong> di pengaturan membuat berkas berisi pengukuran yang tersimpan (tekanan, waktu, sumber, ketinggian).</li>
-      <li data-quelle="5edff8067d7a"><strong>Kirim data diagnostik</strong> membuat berkas berisi pengenal model perangkat, versi sistem operasi, versi aplikasi, status izin, pengaturan, status sensor dan ketinggian, status penyimpanan dan sinkronisasi, log diagnostik iPhone dan Watch, serta pengukuran terakhir. <strong>Tidak pernah disertakan:</strong> koordinat dan kode pemasangan.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Kirim data diagnostik</strong> membuat berkas berisi pengenal model perangkat, versi sistem operasi, versi aplikasi, status izin, pengaturan, status sensor dan ketinggian, status penyimpanan dan sinkronisasi, log diagnostik iPhone dan Watch, serta pengukuran terakhir. <strong>Tidak pernah disertakan:</strong> koordinat dan kode sinkronisasi.</li>
     </ul>
     <p data-quelle="0340d0186391">Kedua berkas membuka lembar berbagi sistem; di sana Anda sendiri yang memilih penerima dan caranya. Tidak ada pengiriman otomatis.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Tujuan:</strong> Ekspor data berfungsi agar Anda dapat menggunakan pengukuran Anda di luar aplikasi; data diagnostik berfungsi untuk menelusuri dan memperbaiki kesalahan. Jika Anda mengirimkannya kepada kami, kami menggunakannya secara eksklusif untuk menangani permintaan Anda (3.8).</p>
