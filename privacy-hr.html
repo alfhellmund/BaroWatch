@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Sinkronizacija između vaših uređaja</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone i Apple Watch</strong> putem WatchConnectivityja (Appleov okvir) sinkroniziraju izmjerene vrijednosti s visinom i dijagnostičke podatke sata.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone i iPad</strong> sinkroniziraju izmjerene vrijednosti putem MultipeerConnectivityja (Appleov okvir) u lokalnoj mreži odnosno putem Bluetootha. Veza je šifrirana i zahtijeva šesteroznamenkasti kod za uparivanje. Za to sustav traži dopuštenje „Lokalna mreža”. Uređaji pritom vide naziv uređaja koji iOS priopćuje aplikaciji (bez posebnog dopuštenja samo općeniti naziv kao što je „iPhone” ili „iPad”).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone i iPad</strong> sinkroniziraju izmjerene vrijednosti putem MultipeerConnectivityja (Appleov okvir) u lokalnoj mreži odnosno putem Bluetootha. Veza je šifrirana i zahtijeva šesteroznamenkasti kod za sinkronizaciju. Za to sustav traži dopuštenje „Lokalna mreža”. Uređaji pritom vide naziv uređaja koji iOS priopćuje aplikaciji (bez posebnog dopuštenja samo općeniti naziv kao što je „iPhone” ili „iPad”).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Nijedan poslužitelj nije uključen; podaci idu izravno između vaših vlastitih uređaja.</p>
     <p data-quelle="f10868003f55"><strong>Svrha:</strong> prikazati iste izmjerene vrijednosti na svim vašim uređajima; postavke vrijede za svaki uređaj zasebno i ne sinkroniziraju se; dijagnostički podaci sata tako dospijevaju u dijagnostičke podatke iPhonea (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Pravna osnova:</strong> § 25. stavak 2. točka 2. TDDDG-a, članak 6. stavak 1. točka (b) GDPR-a; sinkronizaciju između iPhonea i iPada aplikacija koristi samo uz vaše dopuštenje „Lokalna mreža” i kod za uparivanje (vidi odjeljak 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Pravna osnova:</strong> § 25. stavak 2. točka 2. TDDDG-a, članak 6. stavak 1. točka (b) GDPR-a; sinkronizaciju između iPhonea i iPada aplikacija koristi samo uz vaše dopuštenje „Lokalna mreža” i kod za sinkronizaciju (vidi odjeljak 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Postavke i dijagnostički zapisnik</h3>
     <p data-quelle="cdeb969815a9">Postavke (npr. interval mjerenja, razdoblje pohrane, način određivanja visine, ručno unesenu visinu, prag alarma) aplikacija pohranjuje na uređaju. Tehnički dijagnostički zapisnik bilježi što su odlučili pozadinski procesi (senzor, određivanje visine, sinkronizacija, osvježavanje u pozadini, alarm) — bez koordinata. Ograničen je na 512 KB; stariji unosi ispadaju.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Izvoz podataka i dijagnostički podaci (samo na vaš zahtjev)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Izvoz podataka (JSON)</strong> u postavkama stvara datoteku s pohranjenim izmjerenim vrijednostima (tlak, vrijeme, izvor, visina).</li>
-      <li data-quelle="5edff8067d7a"><strong>Pošalji dijagnostičke podatke</strong> stvara datoteku s identifikatorom modela uređaja, verzijom operacijskog sustava, verzijom aplikacije, stanjem dopuštenja, postavkama, stanjem senzora i visine, statusom pohrane i sinkronizacije, dijagnostičkim zapisnikom iPhonea i sata te posljednjim izmjerenim vrijednostima. <strong>Nikad ne sadrži:</strong> koordinate i kod za uparivanje.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Pošalji dijagnostičke podatke</strong> stvara datoteku s identifikatorom modela uređaja, verzijom operacijskog sustava, verzijom aplikacije, stanjem dopuštenja, postavkama, stanjem senzora i visine, statusom pohrane i sinkronizacije, dijagnostičkim zapisnikom iPhonea i sata te posljednjim izmjerenim vrijednostima. <strong>Nikad ne sadrži:</strong> koordinate i kod za sinkronizaciju.</li>
     </ul>
     <p data-quelle="0340d0186391">Obje datoteke otvaraju sustavni prozor za dijeljenje; ondje sami birate primatelja i način. Nema automatskog slanja.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Svrha:</strong> Izvoz podataka služi za daljnju upotrebu vaših izmjerenih vrijednosti izvan aplikacije; dijagnostički podaci služe za praćenje i otklanjanje pogreške. Ako nam ih pošaljete, koristimo ih isključivo za obradu vašeg upita (3.8).</p>
