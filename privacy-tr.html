@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Cihazlarınız arasında eşitleme</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone ve Apple Watch</strong>, WatchConnectivity (Apple çerçevesi) üzerinden yükseklik bilgili ölçüm değerlerini ve Watch’un tanılama verilerini eşitler.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone ve iPad</strong>, MultipeerConnectivity (Apple çerçevesi) üzerinden yerel ağda veya Bluetooth ile ölçüm değerlerini eşitler. Bağlantı şifrelidir ve altı haneli bir eşleştirme kodu gerektirir. Bunun için sistem “Yerel Ağ” izni ister. Cihazlar bu sırada iOS’un uygulamaya bildirdiği cihaz adını görür (özel bir yetki olmadan yalnızca “iPhone” veya “iPad” gibi genel adı).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone ve iPad</strong>, MultipeerConnectivity (Apple çerçevesi) üzerinden yerel ağda veya Bluetooth ile ölçüm değerlerini eşitler. Bağlantı şifrelidir ve altı haneli bir eşitleme kodu gerektirir. Bunun için sistem “Yerel Ağ” izni ister. Cihazlar bu sırada iOS’un uygulamaya bildirdiği cihaz adını görür (özel bir yetki olmadan yalnızca “iPhone” veya “iPad” gibi genel adı).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Hiçbir sunucu devreye girmez; veriler doğrudan kendi cihazlarınız arasında iletilir.</p>
     <p data-quelle="f10868003f55"><strong>Amaç:</strong> aynı ölçüm değerlerini tüm cihazlarınızda göstermek; ayarlar her cihaz için ayrı geçerlidir ve eşitlenmez; Watch’un tanılama verileri bu yolla iPhone’un tanılama verilerine ulaşır (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Hukuki sebep:</strong> TDDDG § 25 f. 2 b. 2, GDPR m. 6/1-b; uygulama iPhone ile iPad arasındaki eşitlemeyi yalnızca “Yerel Ağ” izninizle ve eşleştirme koduyla kullanır (bkz. Bölüm 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Hukuki sebep:</strong> TDDDG § 25 f. 2 b. 2, GDPR m. 6/1-b; uygulama iPhone ile iPad arasındaki eşitlemeyi yalnızca “Yerel Ağ” izninizle ve eşitleme koduyla kullanır (bkz. Bölüm 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Ayarlar ve tanılama günlüğü</h3>
     <p data-quelle="cdeb969815a9">Uygulama ayarları (ör. ölçüm aralığı, saklama süresi, yükseklik modu, elle girilen bir yükseklik, alarm eşiği) cihazda saklar. Teknik bir tanılama günlüğü, arka plan işlemlerinin neye karar verdiğini (sensör, yükseklik belirleme, eşitleme, arka planda yenileme, alarm) — koordinatlar olmadan — kaydeder. Günlük 512 KB ile sınırlıdır; eski kayıtlar silinir.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Veri dışa aktarma ve tanılama verileri (yalnızca sizin talebinizle)</h3>
     <ul>
       <li data-quelle="2482443ad25e">Ayarlardaki <strong>Veri dışa aktarma (JSON)</strong>, saklanan ölçüm değerlerini (basınç, zaman, kaynak, yükseklik) içeren bir dosya oluşturur.</li>
-      <li data-quelle="5edff8067d7a"><strong>Tanılama verilerini gönder</strong>; cihaz modeli tanımlayıcısı, işletim sistemi sürümü, uygulama sürümü, izinlerin durumu, ayarlar, sensör ve yükseklik durumu, depolama ve eşitleme durumu, iPhone ve Watch’un tanılama günlüğü ile son ölçüm değerlerini içeren bir dosya oluşturur. <strong>Asla yer almaz:</strong> koordinatlar ve eşleştirme kodu.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Tanılama verilerini gönder</strong>; cihaz modeli tanımlayıcısı, işletim sistemi sürümü, uygulama sürümü, izinlerin durumu, ayarlar, sensör ve yükseklik durumu, depolama ve eşitleme durumu, iPhone ve Watch’un tanılama günlüğü ile son ölçüm değerlerini içeren bir dosya oluşturur. <strong>Asla yer almaz:</strong> koordinatlar ve eşitleme kodu.</li>
     </ul>
     <p data-quelle="0340d0186391">Her iki dosya da sistemin paylaşma sayfasını açar; alıcıyı ve yolu orada kendiniz seçersiniz. Otomatik gönderim yoktur.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Amaç:</strong> Veri dışa aktarma, ölçüm değerlerinizi uygulamanın dışında kullanmanıza yarar; tanılama verileri bir hatanın izlenmesine ve giderilmesine yarar. Bunları bize gönderirseniz, yalnızca talebinizi işlemek için kullanırız (3.8).</p>
