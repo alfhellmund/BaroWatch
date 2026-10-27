@@ -63,11 +63,11 @@
     <h3 data-quelle="aed3a4251f58">3.5 Sincronização entre os seus dispositivos</h3>
     <ul>
       <li data-quelle="b3b73773d997"><strong>iPhone e Apple Watch</strong> sincronizam, por meio do WatchConnectivity (framework da Apple), medições com altitude e os dados de diagnóstico do Watch.</li>
-      <li data-quelle="cd4e6c681208"><strong>iPhone e iPad</strong> sincronizam medições por meio do MultipeerConnectivity (framework da Apple) na rede local ou via Bluetooth. A conexão é criptografada e exige um código de pareamento de seis dígitos. Para isso, o sistema pede a permissão “Rede Local”. Os dispositivos veem o nome do dispositivo que o iOS informa ao app (sem autorização especial, apenas o nome genérico, como “iPhone” ou “iPad”).</li>
+      <li data-quelle="59e69e85a4a8"><strong>iPhone e iPad</strong> sincronizam medições por meio do MultipeerConnectivity (framework da Apple) na rede local ou via Bluetooth. A conexão é criptografada e exige um código de sincronização de seis dígitos. Para isso, o sistema pede a permissão “Rede Local”. Os dispositivos veem o nome do dispositivo que o iOS informa ao app (sem autorização especial, apenas o nome genérico, como “iPhone” ou “iPad”).</li>
     </ul>
     <p data-quelle="e8f40cd065e2">Nenhum servidor está envolvido; os dados vão diretamente entre os seus próprios dispositivos.</p>
     <p data-quelle="f10868003f55"><strong>Finalidade:</strong> exibir as mesmas medições em todos os seus dispositivos; as configurações valem por dispositivo e não são sincronizadas; é assim que os dados de diagnóstico do Watch chegam aos dados de diagnóstico do iPhone (3.7).</p>
-    <p data-quelle="a9e3097b48c4"><strong>Fundamento jurídico:</strong> § 25, n.º 2, ponto 2, da TDDDG, artigo 6.º, n.º 1, alínea b), do RGPD; o app só usa a sincronização entre iPhone e iPad com a sua permissão “Rede Local” e o código de pareamento (ver seção 6).</p>
+    <p data-quelle="aabd50c32d05"><strong>Fundamento jurídico:</strong> § 25, n.º 2, ponto 2, da TDDDG, artigo 6.º, n.º 1, alínea b), do RGPD; o app só usa a sincronização entre iPhone e iPad com a sua permissão “Rede Local” e o código de sincronização (ver seção 6).</p>
 
     <h3 data-quelle="6056798704bb">3.6 Configurações e registro de diagnóstico</h3>
     <p data-quelle="cdeb969815a9">O app armazena as configurações (p. ex., intervalo de medição, período de armazenamento, modo de altitude, uma altitude inserida manualmente, limite do alarme) no dispositivo. Um registro técnico de diagnóstico guarda o que os processos em segundo plano decidiram (sensor, determinação da altitude, sincronização, atualização em segundo plano, alarme) — sem coordenadas. Ele é limitado a 512 KB; as entradas mais antigas são descartadas.</p>
@@ -77,7 +77,7 @@
     <h3 data-quelle="2e8aa66effc4">3.7 Exportação de dados e dados de diagnóstico (apenas por iniciativa sua)</h3>
     <ul>
       <li data-quelle="2482443ad25e"><strong>Exportação de dados (JSON)</strong> nas configurações gera um arquivo com as medições armazenadas (pressão, horário, fonte, altitude).</li>
-      <li data-quelle="5edff8067d7a"><strong>Enviar dados de diagnóstico</strong> gera um arquivo com o identificador do modelo do dispositivo, a versão do sistema operacional, a versão do app, o estado das permissões, as configurações, o estado do sensor e da altitude, o estado do armazenamento e da sincronização, o registro de diagnóstico do iPhone e do Watch e as últimas medições. <strong>Nunca incluídos:</strong> coordenadas e o código de pareamento.</li>
+      <li data-quelle="7891b3d9b5fa"><strong>Enviar dados de diagnóstico</strong> gera um arquivo com o identificador do modelo do dispositivo, a versão do sistema operacional, a versão do app, o estado das permissões, as configurações, o estado do sensor e da altitude, o estado do armazenamento e da sincronização, o registro de diagnóstico do iPhone e do Watch e as últimas medições. <strong>Nunca incluídos:</strong> coordenadas e o código de sincronização.</li>
     </ul>
     <p data-quelle="0340d0186391">Os dois arquivos abrem a janela de compartilhamento do sistema; ali você mesmo escolhe o destinatário e o meio. Não há envio automático.</p>
     <p data-quelle="3d1b9f41dfd5"><strong>Finalidade:</strong> a exportação de dados serve para você reutilizar as suas medições fora do app; os dados de diagnóstico servem para rastrear e corrigir um erro. Se você os enviar para nós, nós os usamos exclusivamente para tratar a sua solicitação (3.8).</p>
