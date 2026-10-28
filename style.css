@@ -117,11 +117,14 @@ footer a {
   color: var(--muted);
 }
 
+/* Ein Eintrag je Zeile: Mit flex-wrap standen kurze Einträge („Deutsch — Support“) zu zweit bis
+   viert in unterschiedlich gefüllten Zeilen, die Reihenfolge war kaum zu erkennen; die Startseite
+   zeigte wegen ihrer langen Beschreibungen schon eine Spalte (28.10.2026). */
 .lang-switch {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px 24px;
+  flex-direction: column;
+  gap: 8px;
   margin: 24px 0 32px;
   padding: 0;
   font-size: 14px;
